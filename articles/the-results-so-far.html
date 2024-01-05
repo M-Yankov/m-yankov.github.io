@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The results so far</title>
+</head>
+<body>
+    <p>
+        This is a continuation of the previous article <a href="/articles/start-of-a-new-project.html" target="_blank">
+        start a new project</a>.
+    </p>
+    <p>
+        So far the the answer of my efforts is <b>Yes. It's possible</b>. At this time writing this article the software
+        solution represents a single C# file as a console application using the latest .NET Core version. Approximately
+        1000 lines of code, it's ugly, but it works. Now it's should be enhanced refactored and add some UI (Web/Desktop)
+        _Flutter is very popular, but on the other side MAUI in getting popular, knowing that is based on XAML (Xamarin)_.
+    </p>
+    <p>
+        Currently two main libraries are dependant of the solution: <a href="https://github.com/garmin/fit-csharp-sdk" 
+        target="_blank">Garmin.Fit.Sdk</a> and <a href="https://github.com/mono/SkiaSharp" target="_blank">SkiaSharp</a>.
+        <i>Garmin.Fit.Sdk</i> was recently published in nuget which perfectly matches my time of starting developing this 
+        project. Its responsibility is to decode <i>Fit</i> files and retrieve the information like the speed, distance etc.
+        The other package <i>SkiaSharp</i> is actually a C++ library, but it's porter for .NET as a layer which methods
+        are working with C++ core APIs. It makes rendering of the images possible. Also it has <i>not terrible</i> 
+        documentation and fiddle web page where the code can be tested before it gets into the project. However it is c++,
+        but it's easy to find the relative method for .NET.
+    </p>
+    <p>
+        As for the other difficulties, with a little math and using relative measurement it's possible. The route is drawn
+        without much problems - it turns out it's not so hard. The complex images can be imported from Garmin installation
+        files or other sources. The main images are build from scratch using basic shapes like lines, circles, rectangles.
+        The rate of generating images <i>(FPS)</i> can be easily modified. It's just variable where its value can be
+        provided from outside. However I not recommend more than 10 FPS. To render only certain part of the activity is
+        still not tested, but as the previous statement, there are two variables <i>start/end</i> which can be configured.
+    </p>
+</body>
+</html>
