@@ -34,6 +34,10 @@
             overflow: auto;
             position: relative;
         }
+
+        .animatable {
+            transition: opacity 0.75s linear;
+        }
     </style>
 
     <nav class="navbar navbar-light bg-light sticky-top navbar-expand-sm" id="navigation-menu">
@@ -60,7 +64,7 @@
                         <a class="nav-link" href="#about-me">About me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#github">Github</a>
+                        <a class="nav-link" href="#github">GitHub</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#hobbies">Hobbies</a>
@@ -90,7 +94,7 @@
                             <div class="col"></div>
                         </div>
                     </div>
-                    <div class="col-9">
+                    <div class="col-9 animatable opacity-0">
                         <div><i class="bi bi-flag text-primary fs-2"></i> Nationality: Bulgarian</div>
                         <div><i class="bi bi-buildings text-primary fs-2"></i> Town: Sofia</div>
                         <div><i class="bi bi-person-vcard text-primary fs-2"></i> Current Age: 30</div>
@@ -114,12 +118,11 @@
                         <div class="accordion-item">
                             <h3 class="text-primary accordion-header" id="heading1">
                                 <button class="accordion-button text-primary collapsed fs-4" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#collapse1" 
-                                    aria-controls="collapse1">
+                                    data-bs-toggle="collapse" data-bs-target="#collapse1" aria-controls="collapse1">
                                     Physical security at office (not related to software engineering):
                                 </button>
                             </h3>
-                            <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1"
+                            <div id="collapse1" class="accordion-collapse collapse animatable opacity-0" aria-labelledby="heading1"
                                 data-bs-parent="#acc">
                                 <div class="accordion-body">
                                     <ul class="list-group list-group-flush">
@@ -151,25 +154,30 @@
                     <div class="accordion">
                         <div class="accordion-item">
                             <h3 id="heading2" class="accordion-header">
-                                <button class="accordion-button text-primary collapsed fs-4" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapse2" aria-controls="collapse2">
+                                <button class="accordion-button text-primary collapsed fs-4" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapse2" aria-controls="collapse2">
                                     Back-end Sitefinity Developer:
                                 </button>
                             </h3>
-                            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#acc2">
+                            <div id="collapse2" class="accordion-collapse collapse animatable opacity-0" aria-labelledby="heading2"
+                                data-bs-parent="#acc2">
                                 <div class="accordion-body">
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item">
                                             <i>Develop custom widgets (including designer element)</i>
                                         </li>
                                         <li class="list-group-item"><i>Migrating/Maintain Sitefinity projects</i></li>
-                                        <li class="list-group-item"><i>Fixing Sitefinity database and configuration</i></li>
-                                        <li class="list-group-item"><i>Decompile Sitefinity SDK libraries, reading code</i>
+                                        <li class="list-group-item"><i>Fixing Sitefinity database and configuration</i>
                                         </li>
-                                        <li class="list-group-item"><i>Participate in client meetings, consult for better
+                                        <li class="list-group-item"><i>Decompile Sitefinity SDK libraries, reading
+                                                code</i>
+                                        </li>
+                                        <li class="list-group-item"><i>Participate in client meetings, consult for
+                                                better
                                                 solutions,
                                                 estimate client requirements</i></li>
-                                        <li class="list-group-item"><i>Develop web solutions based on .NET to meet client
+                                        <li class="list-group-item"><i>Develop web solutions based on .NET to meet
+                                                client
                                                 requirements</i>
                                         </li>
                                         <li class="list-group-item"><i>Kendo UI JS, Grid, Custom validations and
@@ -177,7 +185,8 @@
                                         <li class="list-group-item"><i>Jira, Confluence, Agile, Unit testing, GitHub,
                                                 TFS</i></li>
                                         <li class="list-group-item"><i>Complex excel export</i></li>
-                                        <li class="list-group-item"><i>Entity Framework, database first approach</i></li>
+                                        <li class="list-group-item"><i>Entity Framework, database first approach</i>
+                                        </li>
                                         <li class="list-group-item"><i>Manual Upload - On-premise IIS</i></li>
                                     </ul>
                                 </div>
@@ -196,12 +205,13 @@
                     <div class="accordion">
                         <div class="accordion-item">
                             <h3 class="accordion-header" id="heading3">
-                                <button class="accordion-button text-primary collapsed fs-3" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapse3" aria-controls="collapse3">
-                                Senior Software Engineer:
+                                <button class="accordion-button text-primary collapsed fs-3" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapse3" aria-controls="collapse3">
+                                    Senior Software Engineer:
                                 </button>
                             </h3>
-                            <div class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#acc3" id="collapse3">
+                            <div class="accordion-collapse collapse animatable opacity-0" aria-labelledby="heading3" data-bs-parent="#acc3"
+                                id="collapse3">
                                 <div class="accordion-body">
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item">
@@ -215,46 +225,55 @@
                                         </li>
                                         <li class="list-group-item">
                                             <i>Migration strategies regarding legacy data without breaking
-                                                changes</i></li>
+                                                changes</i>
+                                        </li>
                                         <li class="list-group-item">
                                             <i>Azure Devops, Build pipelines, unit tests, javascript tests,
                                                 Swagger,
-                                                Regular skill survey meetings</i></li>
+                                                Regular skill survey meetings</i>
+                                        </li>
                                         <li class="list-group-item">
                                             <i>Agile, Daily meetings, Grooming, Planning, Retrospective, 2-3
                                                 weekly
-                                                releases</i></li>
+                                                releases</i>
+                                        </li>
                                         <li class="list-group-item"><i>Gitlab, Azure DevOps Repos</i></li>
-                                        <li class="list-group-item"><i>Research, Analysis, Estimates of new functionalities</i></li>
+                                        <li class="list-group-item"><i>Research, Analysis, Estimates of new
+                                                functionalities</i></li>
                                         <li class="list-group-item">
                                             <i>Complex release strategies of dependent apps, migration
                                                 without
-                                                breaking changes, release part of long developed functionalities</i></li>
+                                                breaking changes, release part of long developed functionalities</i>
+                                        </li>
                                         <li class="list-group-item">
-                                            <i>Quick reaction to emergency bugs and apply hot fixes</i></li>
+                                            <i>Quick reaction to emergency bugs and apply hot fixes</i>
+                                        </li>
                                         <li class="list-group-item"><i>REST APIs .NET Core</i></li>
                                         <li class="list-group-item">
                                             <i>Azure Configuration, App registration permissions, App
                                                 Service
-                                                configurations</i></li>
+                                                configurations</i>
+                                        </li>
                                         <li class="list-group-item">
                                             <i>Coordinate with other teams regarding responsibility of
                                                 application
-                                                functionalities, dependent microservice endpoint changes</i></li>
+                                                functionalities, dependent microservice endpoint changes</i>
+                                        </li>
                                         <li class="list-group-item">
                                             <i>Maintain and refactoring legacy apps, documentation of APIs,
-                                                tests</i></li>
+                                                tests</i>
+                                        </li>
                                         <li class="list-group-item">
                                             <i>Maintain private Nuget repository, common standards of models
                                                 applied
-                                                for all projects</i></li>
+                                                for all projects</i>
+                                        </li>
                                         <li class="list-group-item"><i>Mentoring the new developers to the team</i></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
                 </div>
                 <div class="col-sm-3"></div>
                 <div class="col-sm-3">
@@ -269,25 +288,32 @@
                     <div class="accordion">
                         <div class="accordion-item">
                             <h3 class="accordion-header" id="heading4">
-                                <button class="accordion-button text-primary collapsed fs-3" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapse4" aria-controls="collapse4">
+                                <button class="accordion-button text-primary collapsed fs-3" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapse4" aria-controls="collapse4">
                                     Maintain Wordpress site (volunteer):
                                 </button>
                             </h3>
-                            <div class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#acc4" id="collapse4">
+                            <div class="accordion-collapse collapse animatable opacity-0" aria-labelledby="heading4" data-bs-parent="#acc4"
+                                id="collapse4">
                                 <div class="accordion-body">
                                     <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><i>Develop widget for display tickets info (Tickera &
+                                        <li class="list-group-item"><i>Develop widget for display tickets info (Tickera
+                                                &
                                                 WooCommerce)
-                                                <a href="https://spici.spk.bg/участници" target="_blank">participants page</a>.
-                                                Separate PHP code, HTML mark-up (<a href="https://github.com/bobthecow/mustache.php"
-                                                    target="_blank">Mustache PHP</a>), CSS & JS <a href="https://datatables.net/"
-                                                    tartget="_blank">datatables net</a> in single files.
+                                                <a href="https://spici.spk.bg/участници" target="_blank">participants
+                                                    page</a>.
+                                                Separate PHP code, HTML mark-up (<a
+                                                    href="https://github.com/bobthecow/mustache.php"
+                                                    target="_blank">Mustache PHP</a>), CSS & JS <a
+                                                    href="https://datatables.net/" tartget="_blank">datatables net</a>
+                                                in single files.
                                             </i></li>
-                                        <li class="list-group-item"><i>A group of volunteers use their experience and time to
+                                        <li class="list-group-item"><i>A group of volunteers use their experience and
+                                                time to
                                                 organize a
                                                 3-day
-                                                event with festival and cross-country mountain bike race. The website is responsible
+                                                event with festival and cross-country mountain bike race. The website is
+                                                responsible
                                                 for
                                                 ticket sales
                                                 and information about the event.</i></li>
@@ -309,7 +335,7 @@
                 </div>
                 <div class="col-md-9 col-sm-6"></div>
                 <div class="col-3 text-end">Languages and markup</div>
-                <div class="col-9">
+                <div class="col-9 animatable opacity-0">
                     <i>
                         <pre>
 C#;
@@ -324,7 +350,7 @@ PHP;</pre>
 
                 </div>
                 <div class="col-3 text-end">Common</div>
-                <div class="col-9">
+                <div class="col-9 animatable opacity-0">
                     <i>
 
                         <pre>
@@ -340,7 +366,7 @@ Azure DevOps;</pre>
                     </i>
                 </div>
                 <div class="col-3 text-end text-break">Technologies and Libraries</div>
-                <div class="col-9 col-sm-6">
+                <div class="col-9 col-sm-6 animatable opacity-0">
                     <div class="row">
                         <div class="col text-wrap">
                             <i>
@@ -375,7 +401,7 @@ Sitefinity;</pre>
                 </div>
                 <div class="col-12 col-sm-3"></div>
                 <div class="col-3 text-end">IDEs</div>
-                <div class="col-9">
+                <div class="col-9 animatable opacity-0">
                     <i>
                         <pre>
 Visual Studio;
@@ -385,7 +411,7 @@ Unity 3D;</pre>
                     </i>
                 </div>
                 <div class="col-3 text-end">Tools</div>
-                <div class="col-3 col-sm-2">
+                <div class="col-3 col-sm-2 animatable opacity-0">
                     <i>
                         <pre>
 Postman;
@@ -394,7 +420,7 @@ Telerik Just
 Decompile;</pre>
                     </i>
                 </div>
-                <div class="col-3 col-sm-2">
+                <div class="col-3 col-sm-2 animatable opacity-0">
                     <i>
                         <pre>
 ILSpy;
@@ -402,7 +428,7 @@ StyleCop;
 ChostDoc;</pre>
                     </i>
                 </div>
-                <div class="col-3 col-sm-2">
+                <div class="col-3 col-sm-2 animatable opacity-0">
                     <i>
                         <pre>
 Reflexil;
@@ -422,7 +448,7 @@ APEX SQL Search;</pre>
                         <div class="col fs-6"> <i>2015 - 2016</i> </div>
                     </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-6 animatable opacity-0">
                     <h3 class="text-primary">Web Application Development:</h3>
                     <p>
                         <i>
@@ -445,7 +471,7 @@ APEX SQL Search;</pre>
                         <div class="col fs-6"> <i>2013 - 2017</i> </div>
                     </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-6 animatable opacity-0">
                     <h3 class="text-primary">Information technologies:</h3>
                     <p>
                         <i>
@@ -461,7 +487,7 @@ APEX SQL Search;</pre>
                         <div class="col fs-6"> <i>2018 - 2019</i> </div>
                     </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-6 animatable opacity-0">
                     <h3 class="text-primary">Software engineering:</h3>
                     <p>
                         <i>
@@ -519,7 +545,7 @@ APEX SQL Search;</pre>
                 <div class="col-sm-3 border-bottom border-primary border-5 text-end" id="github">
                     <a class="link-underline link-underline-opacity-0 link-underline-opacity-100-hover text-primary fs-3"
                         href="https://github.com/M-Yankov/" target="_blank">
-                        Github:<svg height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32"
+                        GitHub:<svg height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32"
                             data-view-component="true"
                             class="octicon octicon-mark-github v-align-middle color-fg-default">
                             <path
@@ -533,7 +559,7 @@ APEX SQL Search;</pre>
                 <div class="col-sm-3 text-end">
                     <h4><a href="https://github.com/M-Yankov/SWapi-CSharp" target="_blank">SWAPI-CSharp</a></h4>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-6 animatable opacity-0">
                     <p>
                         <i>A .NET client helper library for consuming data from <a target="_blank"
                                 href="https://swapi.dev/">https://swapi.dev/</a></i>
@@ -543,7 +569,7 @@ APEX SQL Search;</pre>
                 <div class="col-sm-3 text-end">
                     <h4><a href="https://github.com/M-Yankov/SimpleTracker" target="_blank">SimpleTracker</a></h4>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-6 animatable opacity-0">
                     <p><i>
                             An android app for tracking and recording GPS coordinates, making gpx file and integration
                             with
@@ -558,7 +584,7 @@ APEX SQL Search;</pre>
                             target="_blank">Sitefinity
                             Library Items Downloader</a></h5>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-6 animatable opacity-0">
                     <p><i>A package that extends Sitefinity back-end to allow multiple download of Images, Videos and
                             Documents.</i> </p>
                 </div>
@@ -567,7 +593,7 @@ APEX SQL Search;</pre>
                     <h5><a href="https://github.com/M-Yankov/UniversityStudentSystem" target="_blank">University Student
                             System</a></h5>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-6 animatable opacity-0">
                     <p>
                         <i>
                             The final project for evaluation in Telerik Academy. An education system allowing teachers
@@ -582,7 +608,7 @@ APEX SQL Search;</pre>
                 <div class="col-sm-3 text-end">
                     <h4><a href="https://github.com/M-Yankov/passport-cookie" target="_blank">Passport cookie</a></h4>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-6 animatable opacity-0">
                     <p>
                         <i>
                             An extension for <a href="https://www.passportjs.org/" target="_blank">passport js</a>
@@ -596,7 +622,7 @@ APEX SQL Search;</pre>
                     <h4><a href="https://github.com/M-Yankov/m-yankov.github.io" target="_blank">M-Yankov.github.io</a>
                     </h4>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-6 animatable opacity-0">
                     <p>
                         <i>
                             Personal blog for articles sharing knowledge and experience. (In Progress)
@@ -608,7 +634,7 @@ APEX SQL Search;</pre>
                     <h4><a href="https://github.com/M-Yankov/TelemetryExporter" target="_blank">Telemetry Exporter</a>
                     </h4>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-6 animatable opacity-0">
                     <p>
                         <i>
                             Currently working of a simple solution to extract telemetry data (speed, distance, heart
@@ -622,7 +648,7 @@ APEX SQL Search;</pre>
                 <div class="col-sm-3 text-end">
                     <h4>Future collaboration</h4>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-6 animatable opacity-0">
                     <p>
                         <i>
                             <a href="https://gpx.studio/" target="_blank">GPX.studio</a> is a free online portal for
@@ -640,7 +666,7 @@ APEX SQL Search;</pre>
                 </div>
                 <div class="col-sm-9"></div>
                 <div class="col-sm-3"></div>
-                <div class="col-sm-6">
+                <div class="col-sm-6 animatable opacity-0">
                     <i>
                         <pre>
 Outdoor sports.
@@ -652,20 +678,31 @@ Winter sports: ski, ice skating.
 Planning routes and observing topological maps.
 Computer gaming (Steam).
 Coding to fix something!
-Travel.
-    </pre>
+Travel.</pre>
                     </i>
                 </div>
                 <div class="col-sm-3"></div>
-                <div class="col-sm-5 text-center">
+                <div class="col-sm-5 text-center animatable opacity-0">
                     <img src="./images/hobby-travel.png" width="300" alt="travel" class="img-fluid">
                 </div>
-                <div class="col-sm-5 text-center">
+                <div class="col-sm-5 text-center animatable opacity-0">
                     <img src="./images/bike-hobby.png" width="300" alt="bike" class="img-fluid">
                 </div>
             </div>
         </div>
     </div>
+
+    <script>
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.remove('opacity-0');
+                }
+            });
+        });
+
+        document.querySelectorAll('.animatable').forEach(x => observer.observe(x));
+    </script>
 </body>
 
 </html>
