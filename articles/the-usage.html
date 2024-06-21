@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The usage</title>
+</head>
+<body>
+    <p>
+        This is a continuation of the previous article <a href="/articles/the-results-so-far.html" target="_blank">
+        the results so far</a>.
+    </p>
+    <p>
+        5 months after writing the previous article, I've put effort to add UI, to be more usable.
+        Decided to use <a href="https://dotnet.microsoft.com/en-us/apps/maui" target="_blank"> MAUI .NET</a>, but as much
+        I go deeper in using this technology stack, I realized that it still not fully production-ready. The examples
+        from documentation are very common and it's difficult to apply them in your project. The missing functionalities are
+        drag and drop files from desktop into a browse file input. Most of modern websites have such functionality, but MAUI
+        doesn't. <b>The range slider:</b> this is the component I want to use, but it turns out such component is not developed
+        in the .MAUI framework (<i>but it exist for WinUI3 SDK</i>). 
+    </p>
+    <p>
+        Is it so hard to have a horizontal line with to sliders making a range and reporting where a slider was moved by the user?
+        Well, no. Let's make it from scratch. The plan is to have two rectangles (<i>just to make it work, later the shape will be refined</i>)
+        placed on a horizontal line (again rectangle) and move them on X axis. Left rectangle will be initially placed at 0% and
+        right rectangle will be placed at 100% on the line. The space between sliders will be filled with some color.
+        Of course additional calculations should be made to place sliders correctly, for example extracting/adding the width of the slider.
+        Other consideration is to limit their movement to not cross each other.
+        That calculations are not hard, but the problem again come unexpectedly from the MAUI framework. When moving a slider
+        fast or leave the dragging area, the slider is dropped at last location without rise an event that the object has been released 
+        from dragging. Then how to show on the UI a message like: <i>Hey user, you've dropped the object, want to try again.</i>, instead
+        nothing happens. The decision was to live with that for now (<i>until a miracle happens and MAUI team decides to add fixes.</i> ) and
+        continue forward. For my luck other components planned by my design drawings worked well, the collapse sections, loading indicators
+        waiting for async operations and progress bars.   
+    </p>
+    <p>
+        One of the stages of development was to decide whether to use MVVM approach (difficult to apply), it's idea is to separate UI
+        components from the code. It works with a model binder object which the .xaml files are listening for changes 
+        that was previously configured. The code updates the object which reflects the changes in the UI. The other approach is the code-behind
+        to contain reference to components (Button, Label, Slider...) and manipulate directly them. <pre>this.Button.Enabled = false</pre>. The
+        model binder approach is good, but at some time there is a need to put logic there and it no longer remains "model". The current 
+        situation is such that both approaches are applied on different places.
+    </p>
+    <p>
+        It's time to share a social aspect of my life that the integration of UI come in a little rush moment for me. I was looking for a job and
+        my idea was to present at interviews my project. Telemetry Exporter wasn't 100% ready, but I mention it at every interview. 
+    </p>
+    <p>
+        Near May the project was ready for use as beta version 0.0.1. Since I was the main user, after each usage I was discovering little issues
+        and major bugs that need a fix. Little improvements of trace widget make it look very good on videos changing the path color and size of
+        the path itself and the red dot. The pace widget didn't report correct data and calculations were fixed in 0.0.2. Other small issues are missing
+        frames. One of them are for sure at the end of exporting, they are just missing. Another issues that random frames are missing in the
+        sequence. For now I'm sure it happens when multiple widgets are selected for export, meaning that the workaround is to export one by one.
+        Other workaround is to use cmd terminal with <i>copy</i> command: <pre>> copy frame_000031 frame 000032</pre> assuming the 32 is the missing
+        frame. The hack of copying the previous frame could show incorrect results. 
+    </p>
+    <p>
+        Compared to <i>Gramin Virb</i> I'm for 100% more satisfied that the project serves the purpose designed for and it works. The open-source
+        strategy will give an opportunity to extends current functionality fix bugs and show transparency that personal data is not used by the
+        code. I received a question whether the app could export the frames as a <b>video</b>. Everything is possible, but for now it won't serve
+        this functionality, because another program <i>ffmpeg</i> with correct parameters can combine the frames into a video. Main purpose for now
+        is the frames to be used in external video editor like Davinci Resolve.
+        Telemetry Exporter consist of two pages (views), one to select a <i>.fit</i> file from Garmin and the second view is automatically loaded
+        with preview elevation and other setting for export.
+    </p>
+    <p>
+        The future plans for developing the project is to stabilize the core logic of generating and exporting frames. As soon as possible the issues
+        get fixed, the better, but it may require time. It's good opportunity, because next months I will not participate in any race event, no more travels
+        meaning I will not worry for packing backpacks, wake-up early and organize other stuff all this gives me time to work on the issues.
+        After fixing all the bugs, then its time for adding more widgets, I think this will attract more users.
+        I'm not satisfied with MAUI as a framework. I was really surprised form the issues I encountered and found that most of them are known bugs,
+        some of them have workarounds, but other are just waiting for fix a.k.a. miracle.
+        There are several projects that may replace MAUI: Uno, Avalonia UI, Flutter. But for each of them I heard bad things. From another side I
+        really keen ot use Electron JS, but I'm not sure how a JS code will work with C# library. I'm not afraid of JS code, contrary sometimes its
+        more flexible than C#. 
+    </p>
+</body>
+</html>
