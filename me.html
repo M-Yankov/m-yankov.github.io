@@ -9,12 +9,19 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" 
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" 
+        crossorigin="anonymous">
+    </script>
 
+    <!-- <script src="https://unpkg.com/mustache@4.2.0/mustache.js" ></script> -->
+
+    
     <!-- Bootstrap 5.3.2 has bugs related to scroll spy -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-
+        crossorigin="anonymous">
+    </script>
 </head>
 
 <!-- Animation (https://coolcssanimation.com/how-to-trigger-a-css-animation-on-scroll/)-->
@@ -39,8 +46,84 @@
             transition: opacity 0.75s linear;
         }
 
-        .osi-logo {
-            background-color: black;
+        .tooltip.tooltip-primary {
+            opacity: 1;
+        }
+
+        .tooltip-primary .tooltip-inner {
+            background-color: rgb(var(--bs-primary-rgb));
+            border: 1px solid black;
+            padding: 0.2rem;
+        }
+
+        .tooltip-primary .tooltip-arrow::before{
+            top: 0px;
+        }
+
+        .skill {
+            display: grid;
+        }
+
+        .skill-bar {
+            grid-row: 1;
+            width: 12px;
+            height: 7px;
+            border: 1px solid black;
+            background-color: aliceblue;
+            /* border-radius: 2px; */
+            border-collapse: collapse;
+        }
+
+        .skill-bar.active:nth-child(1) {
+            background-color: #ff0000; /* Red */
+            border-radius: 2px 0 0 2px;
+        }
+
+        .skill-bar.active:nth-child(2) {
+            background-color: #ff3300; /* Red-Orange */
+        }
+
+        .skill-bar.active:nth-child(3) {
+            background-color: #ff6600; /* Orange */
+        }
+
+        .skill-bar.active:nth-child(4) {
+            background-color: #ff9900; /* Yellow-Orange */
+        }
+
+        .skill-bar.active:nth-child(5) {
+            background-color: #ffcc00; /* Yellow */
+        }
+
+        .skill-bar.active:nth-child(6) {
+            background-color: #ccff00; /* Yellow-Green */
+        }
+
+        .skill-bar.active:nth-child(7) {
+            background-color: #99ff00; /* Green-Yellow */
+        }
+
+        .skill-bar.active:nth-child(8) {
+            background-color: #66ff00; /* Green */
+        }
+
+        .skill-bar.active:nth-child(9) {
+            background-color: #33ff00; /* Green */
+        }
+
+        .skill-bar.active:nth-child(10) {
+            background-color: #00ff00; /* Green */
+        }
+
+        .skill-bar:nth-child(1) {
+            border-radius: 2px 0 0 2px;
+        }
+        .skill-bar:nth-child(10) {
+            border-radius: 0 2px 2px 0;
+        }
+
+        .skills {
+            font-size: .875em;
         }
     </style>
 
@@ -321,7 +404,8 @@
                                     Back-end Sitefinity Developer:
                                 </button>
                             </h3>
-                            <div id="collapse2" class="accordion-collapse collapse animatable opacity-0" aria-labelledby="heading2"
+                            <div id="collapse2" class="accordion-collapse collapse animatable opacity-0"
+                                aria-labelledby="heading2"
                                 data-bs-parent="#acc2">
                                 <div class="accordion-body">
                                     <ul class="list-group list-group-flush">
@@ -331,21 +415,21 @@
                                         <li class="list-group-item"><i>Migrating/Maintain Sitefinity projects</i></li>
                                         <li class="list-group-item"><i>Fixing Sitefinity database and configuration</i>
                                         </li>
-                                        <li class="list-group-item"><i>Decompile Sitefinity SDK libraries, reading
-                                                code</i>
+                                        <li class="list-group-item">
+                                            <i>Decompile Sitefinity SDK libraries, reading code</i>
                                         </li>
-                                        <li class="list-group-item"><i>Participate in client meetings, consult for
-                                                better
-                                                solutions,
-                                                estimate client requirements</i></li>
-                                        <li class="list-group-item"><i>Develop web solutions based on .NET to meet
-                                                client
-                                                requirements</i>
+                                        <li class="list-group-item">
+                                            <i>Participate in client meetings, consult for better solutions,
+                                                estimate client requirements
+                                            </i>
                                         </li>
-                                        <li class="list-group-item"><i>Kendo UI JS, Grid, Custom validations and
-                                                messages</i> </li>
-                                        <li class="list-group-item"><i>Jira, Confluence, Agile, Unit testing, GitHub,
-                                                TFS</i></li>
+                                        <li class="list-group-item"><i>
+                                            Develop web solutions based on .NET to meet client requirements</i>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <i>Kendo UI JS, Grid, Custom validations and messages</i> </li>
+                                        <li class="list-group-item">
+                                            <i>Jira, Confluence, Agile, Unit testing, GitHub, TFS</i></li>
                                         <li class="list-group-item"><i>Complex excel export</i></li>
                                         <li class="list-group-item"><i>Entity Framework, database first approach</i>
                                         </li>
@@ -404,114 +488,110 @@
                 </div>
                 <div class="col-md-9 col-sm-6"></div>
                 <div class="col-3 text-end">Languages and markup</div>
-                <div class="col-9 animatable opacity-0">
-                    <i>
-                        <pre>
-C#;
-Razor syntax;
-Javascript;
-Semantic HTML;
-Emmet coding;
-CSS, SASS, LESS;
-SQL;
-PHP;</pre>
-                    </i>
-
+                <div class="col-9 animatable opacity-0 skills">
+                    <div><span data-bs-toggle="tooltip" data-bs-placement="top" skill="9" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>C#;</i></span></div>
+                    <div><span data-bs-toggle="tooltip" data-bs-placement="top" skill="7" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>Razor Syntax;</i></span></div>
+                    <div><span data-bs-toggle="tooltip" data-bs-placement="top" skill="8" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>Javascript;</i></span></div>
+                    <div><span data-bs-toggle="tooltip" data-bs-placement="top" skill="7" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>Semantic HTML;</i></span></div>
+                    <div><span data-bs-toggle="tooltip" data-bs-placement="top" skill="8" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>Emmet coding;</i></span></div>
+                    <div>
+                        <span data-bs-toggle="tooltip" data-bs-placement="top" skill="8" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>CSS</i></span>,
+                        <span data-bs-toggle="tooltip" data-bs-placement="top" skill="5" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>SASS</i></span>,
+                        <span data-bs-toggle="tooltip" data-bs-placement="top" skill="8" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>LESS;</i></span>
+                    </div>
+                    <div><span data-bs-toggle="tooltip" data-bs-placement="top" skill="5" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>SQL;</i></span></div>
+                    <div><span data-bs-toggle="tooltip" data-bs-placement="top" skill="3" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>PHP;</i></span></div>
                 </div>
                 <div class="col-3 text-end">Common</div>
-                <div class="col-9 animatable opacity-0">
-                    <i>
-
-                        <pre>
-6+ years' experience with C#, .NET, ASP;
-Object Oriented Programming;
-SOLID;
-Teamwork;
-Work independently;
-English (Average speak, write);
-Microsoft office;
-Libre office;
-Azure DevOps;</pre>
-                    </i>
+                <div class="col-9 animatable opacity-0 skills">
+                    <div><span><i>6+ years' experience with C#, .NET, ASP;</i></span></div>
+                    <div><span data-bs-toggle="tooltip" data-bs-placement="top" skill="9" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>Object Oriented Programming;</i></span></div>
+                    <div><span data-bs-toggle="tooltip" data-bs-placement="top" skill="7" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>Solid;</i></span></div>
+                    <div><span data-bs-toggle="tooltip" data-bs-placement="top" skill="8" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>Teamwork;</i></span></div>
+                    <div><span><i>Work independently;;</i></span></div>
+                    <div><span data-bs-toggle="tooltip" data-bs-placement="top" skill="6" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>English (Average speak, write);</i></span></div>
+                    <div><span data-bs-toggle="tooltip" data-bs-placement="top" skill="5" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>Microsoft office;</i></span></div>
+                    <div><span data-bs-toggle="tooltip" data-bs-placement="top" skill="4" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>Libre office;</i></span></div>
+                    <div><span data-bs-toggle="tooltip" data-bs-placement="top" skill="7" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>Azure DevOps;</i></span></div>
                 </div>
                 <div class="col-3 text-end text-break">Technologies and Libraries</div>
                 <div class="col-9 col-sm-6 animatable opacity-0">
                     <div class="row">
-                        <div class="col text-wrap">
-                            <i>
-
-                                <pre>
-.NET Core;
-REST APIs;
-ASP .NET Core;
-.NET Framework; 
-Azure cloud configurations;
-Azure Key-Vault;
-App Services;
-App Registrations; 
-Service bus (subscribers, topics);
-IIS; Web Deploy for .NET;
-Git (GitHub);</pre>
-                            </i>
+                        <div class="col text-wrap skills">
+                            <div><span data-bs-toggle="tooltip" data-bs-placement="top" skill="8" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>.NET Core;</i></span></div>
+                            <div><span data-bs-toggle="tooltip" data-bs-placement="top" skill="9" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>REST APIs;</i></span></div>
+                            <div><span data-bs-toggle="tooltip" data-bs-placement="top" skill="8" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>ASP .NET Core;</i></span></div>
+                            <div><span data-bs-toggle="tooltip" data-bs-placement="top" skill="7" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>.NET Framework;</i></span></div>
+                            <div><span data-bs-toggle="tooltip" data-bs-placement="top" skill="6" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>Azure cloud configurations;</i></span></div>
+                            <div><span data-bs-toggle="tooltip" data-bs-placement="top" skill="8" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>Azure Key-Vault;</i></span></div>
+                            <div><span data-bs-toggle="tooltip" data-bs-placement="top" skill="7" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>App Registrations;</i></span></div>
+                            <div><span data-bs-toggle="tooltip" data-bs-placement="top" skill="6" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>Service bus (subscribers, topics);</i></span></div>
+                            <div>
+                                <span data-bs-toggle="tooltip" data-bs-placement="top" skill="6" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>IIS; Web Deploy for .NET;</i></span>
+                                <span data-bs-toggle="tooltip" data-bs-placement="top" skill="6" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>Web Deploy for .NET;</i></span>
+                            </div>
+                            <div><span data-bs-toggle="tooltip" data-bs-placement="top" skill="8" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>Git (GitHub);</i></span></div>
                         </div>
-                        <div class="col text-wrap">
-                            <i>
-                                <pre>
-JQuery;
-Entity Framework; MVC;
-Bootstrap; Datatables.Net;
-React JS; Kendo UI; Wordpress;
-Restsharp; React (Redux);
-NodeJS; NPM;
-Windows Forms;
-Sitefinity;
-Polly .NET;</pre>
-                            </i>
+                        <div class="col text-wrap skills">
+                            <div><span data-bs-toggle="tooltip" data-bs-placement="top" skill="8" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>JQuery;</i></span></div>
+                            <div>
+                                <span data-bs-toggle="tooltip" data-bs-placement="top" skill="7" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>Entity Framework;</i></span>
+                                <span data-bs-toggle="tooltip" data-bs-placement="top" skill="7" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>MVC;</i></span>
+                            </div>
+                            <div>
+                                <span data-bs-toggle="tooltip" data-bs-placement="top" skill="6" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>Datatables.Net;</i></span>
+                                <span data-bs-toggle="tooltip" data-bs-placement="top" skill="9" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>Bootstrap;</i></span>
+                            </div>
+                            <div>
+                                <span data-bs-toggle="tooltip" data-bs-placement="top" skill="6" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>React JS;</i></span>
+                                <span data-bs-toggle="tooltip" data-bs-placement="top" skill="4" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>Kendo UI;</i></span>
+                                <span data-bs-toggle="tooltip" data-bs-placement="top" skill="7" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>Angular;</i></span>
+                            </div>
+                            <div>
+                                <span data-bs-toggle="tooltip" data-bs-placement="top" skill="8" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>Restsharp;</i></span>
+                                <span data-bs-toggle="tooltip" data-bs-placement="top" skill="6" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>React (Redux);</i></span>
+                            </div>
+                            <div>
+                                <span data-bs-toggle="tooltip" data-bs-placement="top" skill="6" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>NodeJS;</i></span>
+                                <span data-bs-toggle="tooltip" data-bs-placement="top" skill="5" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>NPM;</i></span>
+                            </div>
+                            <div><span data-bs-toggle="tooltip" data-bs-placement="top" skill="8" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>Windows Forms;</i></span></div>
+                            <div>
+                                <span data-bs-toggle="tooltip" data-bs-placement="top" skill="3" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>Sitefinity;</i></span>
+                                <span data-bs-toggle="tooltip" data-bs-placement="top" skill="2" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>Wordpress;</i></span>
+                            </div>
+                            <div><span data-bs-toggle="tooltip" data-bs-placement="top" skill="7" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>Polly .NET;</i></span></div>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-sm-3"></div>
                 <div class="col-3 text-end">IDEs</div>
-                <div class="col-9 animatable opacity-0">
-                    <i>
-                        <pre>
-Visual Studio;
-Visual Studio Code;
-SQL Management Studio;
-Unity 3D;</pre>
-                    </i>
+                <div class="col-9 animatable opacity-0 skils">
+                    <div><span data-bs-toggle="tooltip" data-bs-placement="top" skill="8" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>Visual Studio;</i></span></div>
+                    <div><span data-bs-toggle="tooltip" data-bs-placement="top" skill="9" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>Visual Studio Code;</i></span></div>
+                    <div><span data-bs-toggle="tooltip" data-bs-placement="top" skill="7" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>SQL Management Studio;</i></span></div>
+                    <div><span data-bs-toggle="tooltip" data-bs-placement="top" skill="4" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>Unity 3D;</i></span></div>
                 </div>
                 <div class="col-3 text-end">Tools</div>
-                <div class="col-3 col-sm-2 animatable opacity-0">
-                    <i>
-                        <pre>
-Postman;
-Ditto;
-Telerik Just 
-Decompile;
-ILSpy;
-StyleCop;</pre>
-                    </i>
+                <div class="col-7 col-sm-2 animatable opacity-0 skills">
+                    <div><span data-bs-toggle="tooltip" data-bs-placement="top" skill="8" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>Postman;</i></span></div>
+                    <div><span><i>Ditto;</i></span></div>
+                    <div><span data-bs-toggle="tooltip" data-bs-placement="top" skill="7" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>Telerik Just Decompile;</i></span></div>
+                    <div><span data-bs-toggle="tooltip" data-bs-placement="top" skill="7" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>ILSpy;</i></span></div>
+                    <div><span data-bs-toggle="tooltip" data-bs-placement="top" skill="4" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>StyleCop;</i></span></div>
                 </div>
-                <div class="col-3 col-sm-2 animatable opacity-0">
-                    <i>
-                        <pre>
-ChostDoc;
-Reflexil;
-APEX SQL Search;
-FileZilla;
-ngrok;</pre>
-                    </i>
+                <div class="col-7 offset-3 offset-sm-0 col-sm-2 animatable opacity-0 skills">
+                    <div><span data-bs-toggle="tooltip" data-bs-placement="top" skill="6" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>ChostDoc;</i></span></div>
+                    <div><span><i>Reflexil;</i></span></div>
+                    <div><span><i>APEX SQL Search;</i></span></div>
+                    <div><span data-bs-toggle="tooltip" data-bs-placement="top" skill="5" data-bs-html="true" data-bs-custom-class="tooltip-primary"><i>FileZilla;</i></span></div>
+                    <div><span><i>ngrok;</i></span></div>
                 </div>
-                <div class="col-3 col-sm-2 animatable opacity-0">
-                    <i>
-                        <pre>
-<a href="https://dotnetfiddle.net/" target="_blank">.NET fiddle</a>;
-<a href="https://jsfiddle.net/" target="_blank">JS fiddle</a>;
-<a href="https://sqlfiddle.com/" target="_blank">SQL fiddle</a>;
-<a href="https://onlinephp.io/" target="_blank">PHP online compile</a>;
-</pre>
-                    </i>
+                <div class="col-7 offset-3 offset-sm-0 col-sm-2 animatable opacity-0">
+                    <div><a href="https://dotnetfiddle.net/" target="_blank">.NET fiddle</a>;</div>
+                    <div><a href="https://jsfiddle.net/" target="_blank">JS fiddle</a>;</div>
+                    <div><a href="https://sqlfiddle.com/" target="_blank">SQL fiddle</a>;</div>
+                    <div><a href="https://onlinephp.io/" target="_blank">PHP online compile</a>;</div>
                 </div>
                 <div class="col-12 col-sm-2"></div>
                 <div class="col-12 col-sm-3 border-bottom border-primary border-5 text-end">
@@ -797,6 +877,39 @@ Travel.</pre>
         });
 
         document.querySelectorAll('.animatable').forEach(x => observer.observe(x));
+    </script>
+
+    <script type="module">
+        // Other option is to use the link in he head section without import the module.
+        import Mustache from "https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.2.0/mustache.min.js";
+        document.addEventListener('DOMContentLoaded', function () {
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+
+                var skillAttr = tooltipTriggerEl.getAttribute('skill');
+                if (skillAttr) {
+                    const skillNum = skillAttr - 0;
+                    const htmlTitle = getHtml(skillNum);
+                    tooltipTriggerEl.setAttribute('title', htmlTitle);
+                }
+
+                return new bootstrap.Tooltip(tooltipTriggerEl);
+            })
+        });
+
+        function getHtml(skill) {
+            const template = document.getElementById('skill-template').innerHTML;
+            let bars = Array.from({ length: skill }, () => ({ active: true }));
+            bars = bars.concat(Array.from({ length: 10 - skill }, () => ({ })))
+            const rendered = Mustache.render(template, { bars: bars });
+            return rendered;
+        }
+        </script>
+
+    <script id="skill-template" type="x-tmpl-mustache">
+        <div class="skill ">
+         {{#bars }} <div class="skill-bar {{#active}}active{{/active}}"></div> {{/bars}}
+        </div>
     </script>
 </body>
 
