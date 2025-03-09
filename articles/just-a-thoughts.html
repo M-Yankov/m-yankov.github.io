@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just a thoughts</title>
+</head>
+<body>
+    <p>The content below are my thoughts between <a href="/articles/start-of-a-new-project" target="_blank">
+        Starting a new project</a> and <a href="/articles/the-results-so-far.html" target="_blank"></a>
+    </p>
+    <p>I forgot the sit and write down something more meaningful. But I share them like a notes</p>
+    <p>
+        <!-- quote -->
+         <p>
+             This issue will stay like a notes or memos of what how my progress is going. Most if this here will go into next article (I hope soon) for the results after finishing the project.
+         </p>
+
+         <p>
+             After decoding the fit file and get experience in using it, I decide to compare it with Virb Edit png layers vs my results in a text file.
+             I saved a record of stats twice per second (500ms = 2fps), with 30fps png image from Vitb Edit.
+             Reading the text file is easy, but reading the text from image is not that simple. Yeah using an already popular library Tesseract. It took time to understand that the text in the image should be black and big with foreground contrast color and using large font. This costs two more rendering processes from Virb edit (however my wrong).
+             Mine results are ready, stats from images are ready for comparing. For each of my result stats a need to compare it to 15 png images generated from Virb Edit (1fps = 15fps). Finally I've made each difference to be logged on the console.
+         </p>
+        
+         <p>
+             The results were very disappointing.
+         </p>
+        
+         <p>
+             First Virb Edit is old (10 years maybe), it works, but how accurate?
+             I was comparing the speed and it started at different time in different way compared to my results. I put a logic that if until find next RecordMesg from the fit file to use the current stats. Example:
+             at 3s a RecordMesg appeared with speed 10 (it doesn't matter the units)
+             at 9s next RecordMesg appears with speed 14
+             For the seconds between 3 and 9 I'm generating 10, which turns out wrong.
+             Currently it looks like 📊 without connecting the peaks of the chart. It should be like a chart 💹 with connecting the points on the timeline.
+             The results should look more like this:
+         </p>
+        
+        <ul>
+            <li>4s - 10.75</li>
+            <li>5s - 11.25</li>
+            <li>6s - 12</li>
+            <li>7s - 12.75</li>
+            <li>8s - 13.25</li>
+            <li>9s - 14</li>
+        </ul>
+        
+        <p>The stats should be increasing.</p>
+        
+        <p>
+            However asserting mine results with Virb Edit may be waste of time. Not sure how Virb Edit generates the telemetry data and since the software is no longer maintained I cannot fully trust for assertion.
+            From another point the Garmin Connect (Web/Mobile) has almost the same stats and I think it's better assert with them.
+        </p>
+        
+        <p>
+            The problem for now is the pace value is calculated somehow different from Garmin services (<a href="https://www.convert-me.com/en/convert/speed/m_sec/m_sec-to-minperkm_1.html?u=m_sec&v=1.987" target="_blank">https://www.convert-me.com/en/convert/speed/m_sec/m_sec-to-minperkm_1.html?u=m_sec&v=1.987</a>), not sure how but it should not interfere my future work.
+        </p>
+        
+        <p>
+            Also need to verify how my logic works in cases when the activity was paused. (TDB)
+        </p>        
+    </p>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working on</title>
+</head>
+<body>
+    <p>Continuation of <a href="/articles/the-usage.html" target="_blank">the usage</a> article related to Telemetry exporter.</p>
+    <p>
+        After an year and a half I bring a simple user interface in order to interact with the export logic. The current version of
+        the app is 0.0.9. .NET MAUI was chosen as this technology is new and modern and it could be will on the top the of wave. 
+        However, .MAUI have hidden traps that may lead to unpleasant experience using it and developing it. I think .NET MAUI 
+        is more focused on mobile development and cross-platform usage. Despite of that, I only need it to work for windows and 
+        <i>eventually for linux and Mac OS</i>. <br/>
+        The app can be tested more easily on linux <i>containers may help here</i>, but for Mac OS, I need to have a Mac
+        machine which I don't have and need to find somehow to be tested. <br/>
+        There is no need Telemetry exporter to be available for mobile, because the main logic is to export frames which is time 
+        consuming and it could drain the battery of the device. <br/>
+        The only option for mobile is instead of making the export on the device, it could send a HTTP request, or trigger a
+        function in the cloud to do the job. Now a consider it may cost money for cloud service, it also may require a database
+        to track which device how many requests make in order to prevent abuse.
+    </p>
+    <p>
+        Issue after issue I push forward the project, as of version 0.0.9 the last feature was adding option to export the frames
+        in a folder. Compared  to the Zip export option, the folder export is easy for usage, because it doesn't need additional
+        time to of waiting unzipping the file. Meaning that the telemetry data is ready for use. <br/>
+        The zip archive is useful when exporting frames on one location (or different PC) and moving the archive somewhere else. <br/>
+        Another major improvement was to separate the main logic into classes and models. The UI in different project where
+        I try to keep only logic related to the user-interface. At first glance the main logic was in a the <i>Main</i> method
+        of the Program.cs class with 2-3 helper classes. As in the previous articles I wanted to see whether the idea will work,
+        that's why I didn't want to spend time on creating a high quality code. Now I regret this by a little, because the code is
+        hard to be refactored, but not impossible. Last refactoring caused a lot of bugs like miscalculated distance, forgotten to
+        consider different variables selected by the user. <br/>
+        Still the main logic of exporting remained in a <i>do...while</i> loop. ( <i>I just wanted to utilize my knowledge of
+        programming and put someday the do...while loop in usage </i> ) This may be removed as it is complicated and hardly to
+        understand from people. <br/>
+    </p>
+    <h4>People:</h4>
+    <p>
+        After creating several videos in youtube using the Telemetry exporter to generate the telemetry data,
+        I realized that the app may have some potential. And I put more effort to make it easy for use, by adding a short
+        video instructions, adding documentation for the usage. <br/>
+        It didn't get thousands of views, but some people find it useful and comment it, <b>others used the link from the 
+        description to download the app and make a request (issue in Github) for a feature or reported a bug!</b>. <br/>
+        This means a lot for me, because people find a way to reach me somehow. <br/>
+        I've ensured the app is very easy to be used by testing that it opens form an `.exe` file. It represents the build
+        state of the app in release mode. But for it works, later I may consider to add an installer. <br/>
+        <strong>
+        The most important thing is that I will aim the app to remain free and open-source, so people can use it without
+        any restrictions. Without needing any registration and need of internet connection with full transparency and possibility
+        to use any older version if new version has undesired behavior or users complaining about something. Just like any popular
+        open-source library. Bootstrap is a good example of this where the latest version has some bugs, but it the previous
+        versions the problem is not present.
+        </strong>
+    </p>
+    <h4>Personality:</h4>
+    <p>
+        Looking back to the beginning of the article, I've written so many words, but <i>I'm firmly planted on the ground</i>
+        realizing that a single developer could hardly beat a whole team of software engineers and QAs. Including that I want
+        to use my free time for sports, social life with friends, reading books, watching movies, playing games this makes
+        the things very hard. I mean to make this app popular and used by many people. <br/>
+    </p>
+    <h4>Widgets:</h4>
+    <p>
+        Also in the last months I received requests in Github. They were less than 5, but still making me happy that people reached me
+        (<i>perhaps</i>) from the youtube video. Most of them are for a widget configuration or missing stats (power). Meaning that I
+        should put more effort in extending the widget configurations, like change the colors, font, size etc. This will make future
+        widgets more flexible. <strong>The most important thing is to make "Abstract widget factory".</strong> Example: the current widget
+        for distance, represented by a two rectangles (one for the whole distance, one for the current distance) should be able to represent
+        all stats like speed, power, elevation, heart rate etc. It only needs the two variables: <b>max</b> and <b>current</b> values.
+        Max is constant value, while current is changing, but not exceed the max value. <br/>
+        The sooner add this functionalities the better. <br/>
+        The target for next months is added, widget functionalities.
+    </p>
+</body>
+</html>
