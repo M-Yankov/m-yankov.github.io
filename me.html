@@ -37,7 +37,7 @@
         }
 
         .scrollspy {
-            height: 92vh;
+            /* height: 92vh; */
             overflow: auto;
             position: relative;
         }
@@ -124,6 +124,35 @@
 
         .skills {
             font-size: .875em;
+        }
+
+        .strava-container {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .strava-link {
+            display: inline-block;
+            background-color: #FC5200;
+            color: #ffc8ad;
+            padding: 5px 10px 5px 30px;
+            font-size: 11px;
+            font-family: Helvetica, Arial, sans-serif;
+            white-space: nowrap;
+            text-decoration: none;
+            background-repeat: no-repeat;
+            background-position: 10px center;
+            border-radius: 3px;
+            background-image: url('https://badges.strava.com/logo-strava-echelon.png')
+        }
+        .strava-link:hover {
+            color: #fff;
+        }
+
+        .strava-link img {
+            margin-left: 2px;
+            vertical-align: text-bottom;
         }
     </style>
 
@@ -858,6 +887,14 @@ Travel.</pre>
                     </i>
                 </div>
                 <div class="col-sm-3"></div>
+                <div class="col-sm-12">
+                    <div class="strava-container">
+                        <a class="strava-link" href="https://strava.com/athletes/36333457" target="_blank">
+                            Follow me on
+                            <img src="https://badges.strava.com/logo-strava.png" alt="Strava" height="13" width="51" />
+                          </a>
+                    </div>
+                </div>
                 <div class="col-sm-5 text-center animatable opacity-0">
                     <img src="./images/hobby-travel.png" width="300" alt="travel" class="img-fluid">
                 </div>
