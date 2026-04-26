@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.2/themes/base/jquery-ui.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <style>
+        body {
+            /* fix for mobile - anchor link bottom-right */
+            min-width: 600px;
+        }
+
         .material-symbols-outlined {
             font-variation-settings:
                 'FILL' 0,
@@ -20,10 +25,8 @@
         }
 
         .float-anchor {
-            position: sticky;
             right: 10px;
             bottom: 10px;
-            float: right;
         }
     </style>
 </head>
@@ -401,6 +404,7 @@
                     <td>
                         <ul>
                             <li><a href="https://www.youtube.com/watch?v=I4_X0xDMdJ0" target="_blank">Видео</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=u7-7m0B3yb8" target="_blank">Видео 2</a></li>
                             <li><a href="https://youtu.be/yGqCVmoy6TI?si=vhTF5u1rKxQ0OaCN" target="_blank">Музика</a></li>
                             <li><a href="https://youtube.com/shorts/zH3rReyTcVQ?feature=share" target="_blank">Video</a></li>
                         </ul>
@@ -723,7 +727,12 @@
                         и отново сваляме ръцете, редуваме краката като вече сме завъртени на дясно (последните крачки са назад), завършва с десен крак горе. 
                     </td>
                     <td>
-                        <a href="https://youtube.com/shorts/sHPIMWDmO9g?feature=share" target="_blank">Video</a>
+                        <ul>
+                            <li><a href="https://www.youtube.com/watch?v=b57yYtpX-w8" target="_blank">Видео</a></li>
+                            <li>
+                                <a href="https://youtube.com/shorts/sHPIMWDmO9g?feature=share" target="_blank">Video</a>
+                            </li>
+                        </ul>
                     </td>
                 </tr>
                 <tr>
@@ -790,6 +799,23 @@
                         </ul>
                     </td>
                 </tr>
+                <tr>
+                    <td></td>
+                    <td>Машала</td>
+                    <td>
+                        Започва като арап, спусък с десен,ляв,десен, левия връща назад с плитка като за кратко се обръщаме към центъра
+                        а десния стъпва зад левия и леко вляво. Тръгва се пак с десен на дясно, левия стъпва отзад с ритъма се въртим
+                        надясно и заставаме с гръб към центъра, а ръцете се пускат. Като сме с гръб вече левия крак води в същата посока
+                        стъпките са същите. На ляво се обръщаме и се хващаме пак за ръцете. Хорото завършва, с две кръстоски, първо в ляво
+                        после дясно, и още две стъпки.
+                    </td>
+                    <td>
+                        <ul>
+                            <li><a href="https://www.youtube.com/watch?v=30uMeSIln2M" target="_blank">Видео</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=UbxmwrUpvj4" target="_blank">Музика</a></li>
+                        </ul>
+                    </td>
+                </tr>
             </tbody>
         </table>
         <p>
@@ -797,7 +823,7 @@
             но съм още далеч от тези неща да ги разбирам. Записките са с цел да се подсетя кое хоро как се играе, тъй като всяко едно има специфично движение.
         </p>
     </div>
-    <div class="container">
+    <div class="container definitions">
         <h2>Дефиниции на термините:</h2>
         <div class="accordion" id="terminiAccordion">
             <div class="accordion-item">
@@ -1054,8 +1080,12 @@
       Сайт със събрани видеа от голяма част от хората - <a href="https://www.folklorika.com/народни-танци/">Линк</a>   
     </div>
 
-    <div class="float-anchor">
-        <button type="button" class="btn btn-outline-primary" id="to-top">
+    <div class="container mt-3 mb-5">
+        <small class="text-muted float-end">Last updated: <span id="last-updated"></span></small>
+    </div>
+
+    <div class="sticky-bottom float-end float-anchor">
+        <button type="button" class="btn btn-primary" id="to-top">
             <span class="material-symbols-outlined">arrow_circle_up</span>
         </button>
     </div>
@@ -1094,6 +1124,16 @@
 
         $('#autocomplete').autocomplete({ source: data, minleght: 0, select: scrollToSelected });
 
+        // Fetch the last commit date from GitHub API
+        fetch('https://api.github.com/repos/m-yankov/m-yankov.github.io/commits?path=folklore.html&per_page=1')
+            .then(response => response.json())
+            .then(data => {
+                if (data.length > 0) {
+                    const date = new Date(data[0].commit.committer.date);
+                    document.getElementById('last-updated').textContent = date.toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
+                }
+            })
+            .catch(error => console.log('Could not fetch commit date:', error));
     </script>
 </body>
 </html>
