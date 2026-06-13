@@ -4,9 +4,2293 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="/styles/index.css">
     <title>MY blog</title>
 </head>
 <body>
-    <p>Hello world!</p>
+    <main class="devblogs-main" id="main" role="main">
+    <div class="wrapper">
+        <div class="container-evo pt-24">
+
+            <div class="breadcrumbs-wrapper" data-bi-area="breadcrumb" data-bi-id="breadcrumb">
+                <nav aria-label="breadcrumb">
+                    <ul class="breadcrumb d-flex flex-wrap p-0 m-0" style="list-style-type: none;">
+                        <li><a href="https://devblogs.microsoft.com/">Dev Blogs</a><span
+                                class="breadcrumb-icon px-6"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" viewBox="0 0 24 24" style="vertical-align: middle;">
+                                    <path fill="none" stroke="currentColor" stroke-width="1" d="m9 5l7 7l-7 7"></path>
+                                </svg></span></li>
+                        <li><span class="ebc-current-readmore" aria-current="page">Visual Studio Blog</span></li>
+                    </ul>
+                </nav>
+            </div>
+
+
+            <!-- alert-banner-starts -->
+            <!-- alert-banner-ends -->
+        </div>
+        <style>
+            /* The image itself */
+            .thumbnail-container img {
+                height: auto;
+                max-height: 100%;
+                width: auto;
+                max-height: 301px;
+            }
+
+            @media (min-width: 900px) {
+                .pinned-wrap {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    align-items: stretch;
+                }
+            }
+        </style>
+        <div class="container-evo mt-80">
+            <div class="mb-80" style="max-width: 976px;">
+                <h1 class="mb-6">Visual Studio Blog</h1>
+                <p class="fs-16 mb-0">The official source of product insight from the Visual Studio Engineering Team</p>
+            </div>
+            <div class="container-sidebar-home mb-80">
+                <div>
+                    <section class="mb-32" data-bi-area="featured_posts">
+                        <div class="border-bottom mb-40">
+                            <h2 class="fs-20 mb-16">Featured posts</h2>
+                        </div>
+                        <div class="feature-bg box p-24 rounded shadow mb-40 position-relative feature-border post-card"
+                            data-post-id="254797">
+                            <div class="pinned-wrap d-flex flex-column flex-lg-row align-items-center gap-40">
+                                <div class="d-flex align-items-center justify-content-center thumbnail-container"><img
+                                        width="800" height="450"
+                                        src="https://devblogs.microsoft.com/visualstudio/wp-content/uploads/sites/4/2025/09/vscom-share-image.jpg"
+                                        class="attachment-Full size-Full wp-post-image"
+                                        alt="Visual Studio 2026 is here: faster, smarter, and a hit with early adopters"
+                                        decoding="async" fetchpriority="high"
+                                        srcset="https://devblogs.microsoft.com/visualstudio/wp-content/uploads/sites/4/2025/09/vscom-share-image.jpg 800w, https://devblogs.microsoft.com/visualstudio/wp-content/uploads/sites/4/2025/09/vscom-share-image-300x169.jpg 300w, https://devblogs.microsoft.com/visualstudio/wp-content/uploads/sites/4/2025/09/vscom-share-image-768x432.jpg 768w"
+                                        sizes="(max-width: 800px) 100vw, 800px"></div>
+                                <div class="w-100 pinned-right d-flex justify-content-between flex-column">
+                                    <div>
+                                        <div class="d-flex justify-content-between mb-20">
+                                            <div class="d-flex gap-16">
+                                                <div class="d-flex align-items-center">
+                                                    Nov 11, 2025 </div>
+                                            </div>
+                                            <div class="d-flex gap-16">
+                                                <div class="d-flex gap-4">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path class="dark-theme"
+                                                            d="M10.4809 13.8424H15.4C16.2962 13.8424 17 13.1289 17 12.2766V5.56594C17 4.7136 16.2962 4.00012 15.4 4.00012H4.6C3.70383 4.00012 3 4.7136 3 5.56594V12.2766C3 13.1289 3.70383 13.8424 4.6 13.8424H6.19908L6.2 17.0001L6.20346 16.9999L6.20502 16.999L10.4809 13.8424ZM6.79895 17.8035C6.35668 18.1299 5.73 18.0407 5.39921 17.6043C5.26989 17.4336 5.2 17.2263 5.2 17.0134L5.19937 14.8424H4.6C3.16406 14.8424 2 13.6936 2 12.2766V5.56594C2 4.14888 3.16406 3.00012 4.6 3.00012H15.4C16.8359 3.00012 18 4.14888 18 5.56594V12.2766C18 13.6936 16.8359 14.8424 15.4 14.8424H10.81L6.79895 17.8035Z"
+                                                            fill="#0F6CBD"></path>
+                                                    </svg>
+                                                    <div class="d-flex align-items-center neutral-color">
+                                                        <span class="screen-reader-text">Post comments count</span>
+                                                        ?
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex gap-4">
+                                                    <div class="d-flex align-items-center">
+                                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path class="dark-theme"
+                                                                d="M10.4965 17.3028L16.7408 10.9994C18.4252 9.28856 18.4199 6.52549 16.7239 4.81249C15.0611 3.13292 12.3961 3.0895 10.6978 4.69086C10.6612 4.72539 10.6251 4.76068 10.5894 4.79673L9.99299 5.40026L9.38843 4.78963C9.35529 4.75616 9.32175 4.72333 9.28783 4.69116C7.58595 3.07726 4.91654 3.10193 3.26122 4.7739C1.5729 6.4792 1.58114 9.25004 3.27679 10.9627L9.55368 17.3028C9.81404 17.5657 10.2362 17.5657 10.4965 17.3028ZM11.3 5.50029C12.5964 4.19135 14.7025 4.19204 16.0133 5.51604C17.3253 6.84123 17.3272 8.97734 16.0292 10.2968L16.0282 10.2978L10.0252 16.3577L3.98743 10.2592C2.67408 8.93263 2.67286 6.78953 3.97185 5.47746C5.26525 4.17106 7.36984 4.17208 8.6778 5.49319L9.63801 6.46306C9.8338 6.66082 10.1534 6.66067 10.349 6.46272L11.3 5.50029Z"
+                                                                fill="#242424"></path>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="d-flex align-items-center neutral-color">
+                                                        <span class="screen-reader-text">Post likes count</span>
+                                                        ?
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h3 class="fs-24 mb-20">
+                                            <a class="single-click"
+                                                href="https://devblogs.microsoft.com/visualstudio/visual-studio-2026-is-here-faster-smarter-and-a-hit-with-early-adopters/"
+                                                data-bi-id="blog_home_page_featured_posts_card_singleclick"
+                                                data-bi-name="Visual Studio 2026 is here: faster, smarter, and a hit with early adopters">
+                                                Visual Studio 2026 is here: faster, smarter, and a hit with early
+                                                adopters </a>
+                                        </h3>
+                                        <div class="d-flex gap-6 align-items-center">
+                                            <div class="avatar-parent">
+                                                <img src="https://devblogs.microsoft.com/visualstudio/wp-content/uploads/sites/4/2021/09/Mads-glasses-square-96x96.jpg"
+                                                    style="width: 20px; height: 20px;" class="avatar-20 rounded-pill a"
+                                                    alt="Mads Kristensen">
+                                            </div>
+                                            <span class="fs-14">Mads Kristensen</span>
+                                        </div>
+                                        <p class="mt-12">
+                                            Dear developers,
+
+                                            We’re thrilled to announce that Visual Studio 2026 is now generally
+                                            available! This is a moment we’ve built side by side with you. Your feed...
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="d-flex flex-wrap gap-16 feature-border-top post-topics-list mt-16 pt-16">
+                                        <span aria-label="Announcement topic"
+                                            class="d-flex align-items-center tag btn-outline-secondary fw-600 px-8 tag-disabled">Announcement</span><span
+                                            aria-label="Visual Studio 2026 topic"
+                                            class="d-flex align-items-center tag btn-outline-secondary fw-600 px-8 tag-disabled">Visual
+                                            Studio 2026</span><span aria-label="Release topic"
+                                            class="d-flex align-items-center tag btn-outline-secondary fw-600 px-8 tag-disabled">Release</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="mb-32" data-bi-area="latest_posts">
+                        <div class="d-flex justify-content-between border-bottom mb-40">
+                            <h2 class="fs-20 mb-16 pt-6" id="load-posts">Latest posts</h2>
+                            <style>
+                                /* Storing grid globle styles here for now*/
+                                .masonry-card {
+                                    box-sizing: border-box;
+                                }
+
+                                .archive-posts.grid-view {
+                                    display: grid;
+                                    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                                }
+
+                                /* Masonry thumbnail */
+                                .masonry-thumbnail {
+                                    display: flex;
+                                    justify-content: center;
+                                }
+
+                                .grid-view .masonry-thumbnail {
+                                    align-items: center;
+                                    width: 100%;
+                                    min-height: 188px;
+                                }
+
+                                .grid-view .masonry-thumbnail img {
+                                    max-height: 164px;
+                                    width: auto;
+                                }
+
+                                .masonry-thumbnail {
+                                    background: var(--clr-card-image-bg);
+                                    border-radius: 8px;
+                                    padding: 12px;
+                                }
+
+                                /* Grid View */
+                                .home.blog .archive-posts.grid-view .masonry-card {
+                                    display: block;
+                                }
+
+                                /* Single Column View */
+                                .archive-posts.single-column {
+                                    display: block;
+                                }
+
+                                .archive-posts.single-column .masonry-card {
+                                    min-height: 311px;
+                                    margin-bottom: 24px;
+                                }
+
+                                @media (min-width: 1084px) {
+                                    .masonry-container {
+                                        gap: 40px;
+                                    }
+
+                                    .masonry-card {
+                                        padding: 24px;
+                                    }
+
+                                    .archive-posts.single-column .masonry-card {
+                                        margin-bottom: 40px;
+                                    }
+
+                                }
+
+                                @media (min-width: 900px) {
+                                    .card-body {
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: space-between;
+                                        flex-grow: 1;
+                                    }
+
+                                    .archive-posts.single-column .card-body {
+                                        width: 60%;
+                                    }
+                                }
+
+                                @media (max-width: 760px) {
+                                    .masonry-container {
+                                        grid-template-columns: 1fr;
+                                    }
+
+                                    .single-column .masonry-card {
+                                        display: block;
+                                    }
+
+                                    .single-column .masonry-thumbnail {
+                                        margin-bottom: 16px;
+                                    }
+                                }
+
+                                .single-column .masonry-card {
+                                    flex-direction: row;
+                                    gap: 32px;
+                                }
+
+                                @media (min-width: 761px) {
+                                    .single-column .masonry-card .masonry-thumbnail {
+                                        flex-grow: 1;
+                                        align-items: center;
+                                        min-width: 240px;
+                                        max-width: 449px;
+                                        width: 40%;
+                                    }
+                                }
+
+                                .single-column .card-body .card-top>div {
+                                    margin-top: 0px;
+                                }
+
+                                /* Style the button */
+                                .layout-toggle {
+                                    display: none;
+                                }
+
+                                @media (min-width: 760px) {
+                                    .layout-toggle {
+                                        display: flex;
+                                        gap: 12px;
+                                        height: 32px;
+                                    }
+                                }
+
+                                .layout-toggle button {
+                                    background-color: transparent;
+                                    border: none;
+                                    cursor: pointer;
+                                    padding: 0px;
+                                }
+
+                                .layout-toggle button svg path {
+                                    fill: var(--clr-landing-navbar);
+                                }
+
+                                .layout-toggle button.active svg rect {
+                                    fill: var(--clr-btn-toggle);
+                                    stroke: none;
+                                }
+
+                                .layout-toggle button:not(.active) svg rect {
+                                    fill: var(--clr-card-bg);
+                                    stroke: var(--clr-btn-greyscale-border);
+                                }
+
+                                .layout-toggle button.active svg path {
+                                    fill: white;
+                                }
+
+                                .layout-toggle button:not(.active):hover svg rect {
+                                    fill: var(--clr-btn-greyscale-hover-bg);
+                                }
+
+                                .layout-toggle button:focus {
+                                    border-radius: 4px;
+                                }
+
+                                .excerpt-title {
+                                    display: -webkit-box;
+                                    -webkit-line-clamp: 3;
+                                    /* Number of full lines */
+                                    -webkit-box-orient: vertical;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                }
+
+                                .excerpt-body {
+                                    display: -webkit-box;
+                                    -webkit-line-clamp: 3;
+                                    /* Number of full lines */
+                                    -webkit-box-orient: vertical;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                }
+                            </style>
+                            <div class="layout-toggle">
+                                <!-- Grid View Button -->
+                                <button id="grid-view-btn" class="active" aria-label="Grid View" aria-pressed="true"
+                                    data-bi-area="latest posts" data-bi-id="blog_home_page_latest_posts_grid_toggle">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.5" y="0.5" width="31" height="31" rx="3.5"></rect>
+                                        <path
+                                            d="M12.75 17C13.9926 17 15 18.0074 15 19.25V22.75C15 23.9926 13.9926 25 12.75 25H9.25C8.00736 25 7 23.9926 7 22.75V19.25C7 18.0074 8.00736 17 9.25 17H12.75ZM22.75 17C23.9926 17 25 18.0074 25 19.25V22.75C25 23.9926 23.9926 25 22.75 25H19.25C18.0074 25 17 23.9926 17 22.75V19.25C17 18.0074 18.0074 17 19.25 17H22.75ZM12.75 18.5H9.25C8.83579 18.5 8.5 18.8358 8.5 19.25V22.75C8.5 23.1642 8.83579 23.5 9.25 23.5H12.75C13.1642 23.5 13.5 23.1642 13.5 22.75V19.25C13.5 18.8358 13.1642 18.5 12.75 18.5ZM22.75 18.5H19.25C18.8358 18.5 18.5 18.8358 18.5 19.25V22.75C18.5 23.1642 18.8358 23.5 19.25 23.5H22.75C23.1642 23.5 23.5 23.1642 23.5 22.75V19.25C23.5 18.8358 23.1642 18.5 22.75 18.5ZM12.75 7C13.9926 7 15 8.00736 15 9.25V12.75C15 13.9926 13.9926 15 12.75 15H9.25C8.00736 15 7 13.9926 7 12.75V9.25C7 8.00736 8.00736 7 9.25 7H12.75ZM22.75 7C23.9926 7 25 8.00736 25 9.25V12.75C25 13.9926 23.9926 15 22.75 15H19.25C18.0074 15 17 13.9926 17 12.75V9.25C17 8.00736 18.0074 7 19.25 7H22.75ZM12.75 8.5H9.25C8.83579 8.5 8.5 8.83579 8.5 9.25V12.75C8.5 13.1642 8.83579 13.5 9.25 13.5H12.75C13.1642 13.5 13.5 13.1642 13.5 12.75V9.25C13.5 8.83579 13.1642 8.5 12.75 8.5ZM22.75 8.5H19.25C18.8358 8.5 18.5 8.83579 18.5 9.25V12.75C18.5 13.1642 18.8358 13.5 19.25 13.5H22.75C23.1642 13.5 23.5 13.1642 23.5 12.75V9.25C23.5 8.83579 23.1642 8.5 22.75 8.5Z"
+                                            fill="#3A96DD"></path>
+                                    </svg>
+                                </button>
+                                <!-- Column View Button -->
+                                <button id="column-view-btn" aria-label="Column View" aria-pressed="false"
+                                    data-bi-area="latest posts" data-bi-id="blog_home_page_latest_posts_column_toggle">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.5" y="0.5" width="31" height="31" rx="3.5"></rect>
+                                        <path
+                                            d="M8.25 8C7.00736 8 6 9.00736 6 10.25V12.75C6 13.9926 7.00736 15 8.25 15H10.75C11.9926 15 13 13.9926 13 12.75V10.25C13 9.00736 11.9926 8 10.75 8H8.25ZM7.5 10.25C7.5 9.83579 7.83579 9.5 8.25 9.5H10.75C11.1642 9.5 11.5 9.83579 11.5 10.25V12.75C11.5 13.1642 11.1642 13.5 10.75 13.5H8.25C7.83579 13.5 7.5 13.1642 7.5 12.75V10.25ZM15.25 9C14.8358 9 14.5 9.33579 14.5 9.75C14.5 10.1642 14.8358 10.5 15.25 10.5H25.25C25.6642 10.5 26 10.1642 26 9.75C26 9.33579 25.6642 9 25.25 9H15.25ZM15.25 12C14.8358 12 14.5 12.3358 14.5 12.75C14.5 13.1642 14.8358 13.5 15.25 13.5H22.25C22.6642 13.5 23 13.1642 23 12.75C23 12.3358 22.6642 12 22.25 12H15.25ZM8.25 17C7.00736 17 6 18.0074 6 19.25V21.75C6 22.9926 7.00736 24 8.25 24H10.75C11.9926 24 13 22.9926 13 21.75V19.25C13 18.0074 11.9926 17 10.75 17H8.25ZM7.5 19.25C7.5 18.8358 7.83579 18.5 8.25 18.5H10.75C11.1642 18.5 11.5 18.8358 11.5 19.25V21.75C11.5 22.1642 11.1642 22.5 10.75 22.5H8.25C7.83579 22.5 7.5 22.1642 7.5 21.75V19.25ZM15.25 18C14.8358 18 14.5 18.3358 14.5 18.75C14.5 19.1642 14.8358 19.5 15.25 19.5H25.25C25.6642 19.5 26 19.1642 26 18.75C26 18.3358 25.6642 18 25.25 18H15.25ZM15.25 21C14.8358 21 14.5 21.3358 14.5 21.75C14.5 22.1642 14.8358 22.5 15.25 22.5H22.25C22.6642 22.5 23 22.1642 23 21.75C23 21.3358 22.6642 21 22.25 21H15.25Z"
+                                            fill="white"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <script>
+                                document.addEventListener('DOMContentLoaded', function () {
+                                    // detect if we are on the landing page or a blog home page in PHP, but otherwise keep the logic in JS for clarity
+                                    const isMainSite = false;
+                                    // Single column layout view toggle
+                                    const wrappers = document.querySelectorAll('.archive-posts');
+                                    const paginateSelector = (isMainSite ? '.netsposts-paginate .next' : '#pload-more');
+                                    const paginate = document.querySelector(paginateSelector);
+                                    const gridButton = document.getElementById('grid-view-btn');
+                                    const columnButton = document.getElementById('column-view-btn');
+                                    // observer to apply the updated layout attribute to newly added cards automatically after load more is clicked
+                                    const cardObserver = new MutationObserver((mutations, observer) => {
+                                        let newCards = false;
+                                        // check that at least one new card has been added
+                                        mutations.forEach(function (mutation) {
+                                            if (mutation.type === 'childList') { newCards = true; }
+                                        });
+                                        // run once if new cards have been added rather than once for each mutation
+                                        if (newCards) {
+                                            let chosenLayout = (gridButton.classList.contains('active') ? 'grid-view' : 'single-column');
+                                            updateLatestPostsTracking(chosenLayout);
+                                        }
+                                    });
+
+                                    cardObserver.observe(wrappers[0], { childList: true });
+
+                                    // Check for stored layout in localStorage
+                                    let storedLayout = localStorage.getItem('layout') || 'grid-view'; // Default is grid-view
+
+                                    // Apply the stored layout
+                                    wrappers.forEach(wrapper => {
+                                        wrapper.classList.add(storedLayout);
+                                    });
+                                    updateLatestPostsTracking(storedLayout);
+
+                                    // Function to update the layout state in localStorage
+                                    function updateLayoutState(layout) {
+                                        localStorage.setItem('layout', layout); // Store layout in localStorage
+                                    }
+
+                                    // function to update data bi attributes to reflect the current layout
+                                    function updateLatestPostsTracking(layout) {
+                                        let layoutString = '';
+                                        let cardLinkSelector = (isMainSite ? 'netsposts-posttitle-link' : 'single-click');
+                                        // make layout string compliant with tracking requirements
+                                        switch (layout) {
+                                            case 'grid-view':
+                                                layoutString = 'grid';
+                                                break;
+                                            case 'single-column':
+                                                layoutString = 'column';
+                                                break;
+                                        }
+                                        // update data attributes on all cards
+                                        wrappers.forEach(wrapper => {
+                                            // get current collection of cards in case new cards have been added
+                                            let cards = wrapper.getElementsByClassName(cardLinkSelector);
+                                            Array.from(cards).forEach(card => {
+                                                if (isMainSite) {
+                                                    card.setAttribute('data-bi-id', 'landing_page_latest_posts_' + layoutString + '_card');
+                                                } else {
+                                                    card.setAttribute('data-bi-id', 'blog_home_page_latest_posts_' + layoutString + '_card_singleclick');
+                                                }
+                                            })
+                                        });
+                                        if (paginate) {
+                                            // update data attributes on pagination
+                                            if (isMainSite) {
+                                                paginate.setAttribute('data-bi-id', 'landing_page_latest_posts_' + layoutString + '_load_more');
+                                            } else {
+                                                paginate.setAttribute('data-bi-id', 'blog_home_page_latest_posts_' + layoutString + '_load_more');
+                                            }
+                                        }
+                                    }
+
+                                    // Function to check screen size and apply the correct layout (but without removing single-column)
+                                    function checkScreenSize() {
+                                        // No need to remove single-column for smaller screens
+                                        storedLayout = localStorage.getItem('layout');
+                                        wrappers.forEach(wrapper => {
+                                            if (storedLayout === 'single-column') {
+                                                wrapper.classList.remove('grid-view');
+                                                wrapper.classList.add('single-column');
+                                            } else {
+                                                wrapper.classList.remove('single-column');
+                                                wrapper.classList.add('grid-view');
+                                            }
+                                        });
+
+                                        // Update button active state based on stored layout
+                                        if (storedLayout === 'single-column') {
+                                            columnButton.classList.add('active');
+                                            columnButton.setAttribute('aria-pressed', 'true');
+                                            gridButton.classList.remove('active');
+                                            gridButton.setAttribute('aria-pressed', 'false');
+                                        } else {
+                                            gridButton.classList.add('active');
+                                            gridButton.setAttribute('aria-pressed', 'true');
+                                            columnButton.classList.remove('active');
+                                            columnButton.setAttribute('aria-pressed', 'false');
+                                        }
+                                    }
+
+                                    // Run check on load and window resize
+                                    checkScreenSize();
+                                    window.addEventListener('resize', checkScreenSize);
+
+                                    // Set event listener for Grid View button
+                                    gridButton.addEventListener('click', function () {
+                                        wrappers.forEach(wrapper => {
+                                            wrapper.classList.remove('single-column');
+                                            wrapper.classList.add('grid-view');
+                                        });
+                                        // Update active button state
+                                        gridButton.classList.add('active');
+                                        columnButton.classList.remove('active');
+
+                                        gridButton.setAttribute('aria-pressed', 'true');
+                                        columnButton.setAttribute('aria-pressed', 'false');
+
+                                        updateLayoutState('grid-view'); // Save grid-view in localStorage
+                                        updateLatestPostsTracking('grid-view'); // update data bi attr
+                                    });
+
+                                    // Set event listener for Column View button
+                                    columnButton.addEventListener('click', function () {
+                                        wrappers.forEach(wrapper => {
+                                            wrapper.classList.remove('grid-view');
+                                            wrapper.classList.add('single-column');
+                                        });
+                                        // Update active button state
+                                        columnButton.classList.add('active');
+                                        gridButton.classList.remove('active');
+
+                                        columnButton.setAttribute('aria-pressed', 'true');
+                                        gridButton.setAttribute('aria-pressed', 'false');
+
+                                        updateLayoutState('single-column'); // Save single-column in localStorage
+                                        updateLatestPostsTracking('single-column'); // update data bi attr
+                                    });
+                                });
+                            </script>
+                        </div>
+
+                        <div class="archive-posts masonry-container gap-24 grid-view">
+
+                            <div class="masonry-card box bg-white d-flex justify-content-between flex-column p-16 gap-20 rounded shadow position-relative border-1 post-card alm-seo"
+                                data-post-id="255690" data-page="1"
+                                data-url="https://devblogs.microsoft.com/visualstudio">
+
+                                <div class="masonry-thumbnail">
+                                    <img class="post-thumbnail wp-image-255697 lazyloaded" width="2500" height="1405"
+                                        src="https://devblogs.microsoft.com/visualstudio/wp-content/uploads/sites/4/2026/02/visual-studio-2026-february-update-scaled.webp"
+                                        data-src="https://devblogs.microsoft.com/visualstudio/wp-content/uploads/sites/4/2026/02/visual-studio-2026-february-update-scaled.webp"
+                                        alt="Visual Studio February Update">
+                                </div>
+
+                                <div class="card-body">
+                                    <div class="card-top">
+
+                                        <div
+                                            class="d-flex align-items-center justify-content-between gap-12 mt-16 mb-16">
+                                            <div>
+                                                Feb 24, 2026 </div>
+
+                                            <div class="d-flex gap-12">
+
+
+                                                <div class="d-flex gap-4 clr-grey-61">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path class="dark-theme"
+                                                            d="M10.4809 13.8424H15.4C16.2962 13.8424 17 13.1289 17 12.2766V5.56594C17 4.7136 16.2962 4.00012 15.4 4.00012H4.6C3.70383 4.00012 3 4.7136 3 5.56594V12.2766C3 13.1289 3.70383 13.8424 4.6 13.8424H6.19908L6.2 17.0001L6.20346 16.9999L6.20502 16.999L10.4809 13.8424ZM6.79895 17.8035C6.35668 18.1299 5.73 18.0407 5.39921 17.6043C5.26989 17.4336 5.2 17.2263 5.2 17.0134L5.19937 14.8424H4.6C3.16406 14.8424 2 13.6936 2 12.2766V5.56594C2 4.14888 3.16406 3.00012 4.6 3.00012H15.4C16.8359 3.00012 18 4.14888 18 5.56594V12.2766C18 13.6936 16.8359 14.8424 15.4 14.8424H10.81L6.79895 17.8035Z"
+                                                            fill="#0F6CBD"></path>
+                                                    </svg>
+                                                    <div class="d-flex align-items-center clr-grey-61">
+                                                        <span class="screen-reader-text">Post comments count</span>
+                                                        0
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex gap-4">
+                                                    <div class="d-flex align-items-center clr-grey-61">
+                                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path class="dark-theme"
+                                                                d="M10.4965 17.3028L16.7408 10.9994C18.4252 9.28856 18.4199 6.52549 16.7239 4.81249C15.0611 3.13292 12.3961 3.0895 10.6978 4.69086C10.6612 4.72539 10.6251 4.76068 10.5894 4.79673L9.99299 5.40026L9.38843 4.78963C9.35529 4.75616 9.32175 4.72333 9.28783 4.69116C7.58595 3.07726 4.91654 3.10193 3.26122 4.7739C1.5729 6.4792 1.58114 9.25004 3.27679 10.9627L9.55368 17.3028C9.81404 17.5657 10.2362 17.5657 10.4965 17.3028ZM11.3 5.50029C12.5964 4.19135 14.7025 4.19204 16.0133 5.51604C17.3253 6.84123 17.3272 8.97734 16.0292 10.2968L16.0282 10.2978L10.0252 16.3577L3.98743 10.2592C2.67408 8.93263 2.67286 6.78953 3.97185 5.47746C5.26525 4.17106 7.36984 4.17208 8.6778 5.49319L9.63801 6.46306C9.8338 6.66082 10.1534 6.66067 10.349 6.46272L11.3 5.50029Z"
+                                                                fill="#242424"></path>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="d-flex align-items-center clr-grey-61">
+                                                        <span class="screen-reader-text">Post likes count</span>
+                                                        4
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <h3 class="fs-24 fw-600 mb-16">
+                                            <a href="https://devblogs.microsoft.com/visualstudio/visual-studio-february-update/"
+                                                class="single-click excerpt-title"
+                                                data-bi-id="blog_home_page_latest_posts_grid_card_singleclick"
+                                                data-bi-name="Visual Studio February Update">
+                                                Visual Studio February Update </a>
+                                        </h3>
+
+                                        <div class="d-flex gap-6 align-items-center">
+                                            <div class="avatar-parent">
+                                                <img src="https://devblogs.microsoft.com/visualstudio/wp-content/uploads/sites/4/2021/08/20210412-mdownie-x-small-96x96.jpg"
+                                                    style="width: 20px; height: 20px;" class="avatar-20 rounded-pill a"
+                                                    alt="Mark Downie">
+                                            </div>
+                                            <span class="fs-14">Mark Downie</span>
+                                        </div>
+                                        <p class="excerpt-body mt-16 mb-24">
+                                            This month’s Visual Studio update continues our focus on helping you move
+                                            faster and stay in flow, with practical improvements across AI assistance,
+                                            debugging, testing, and modernization. Building on the momentum from
+                                            January’s editor updates, the February release brings smarter diagnostics
+                                            and targeted support for real world development scenarios, from WinForms
+                                            maintenance to C++ modernization.
+
+                                            All of the features highlighted are available in the Visual Studio 2026
+                                            Stable Channel as part of the February 2026 feature update (18.3). Please
+                                            update to the latest version to try out these new features!
+                                            WinForms Ex... </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="masonry-card box bg-white d-flex justify-content-between flex-column p-16 gap-20 rounded shadow position-relative border-1 post-card"
+                                data-post-id="255658">
+
+                                <div class="masonry-thumbnail">
+                                    <img class="post-thumbnail wp-image-255659 lazyloaded" width="544" height="469"
+                                        src="https://devblogs.microsoft.com/visualstudio/wp-content/uploads/sites/4/2026/02/Screenshot-2026-02-19-125547.webp"
+                                        data-src="https://devblogs.microsoft.com/visualstudio/wp-content/uploads/sites/4/2026/02/Screenshot-2026-02-19-125547.webp"
+                                        alt="Custom Agents in Visual Studio: Built in and Build-Your-Own agents">
+                                </div>
+
+                                <div class="card-body">
+                                    <div class="card-top">
+
+                                        <div
+                                            class="d-flex align-items-center justify-content-between gap-12 mt-16 mb-16">
+                                            <div>
+                                                Feb 19, 2026 </div>
+
+                                            <div class="d-flex gap-12">
+
+
+                                                <div class="d-flex gap-4 clr-grey-61">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path class="dark-theme"
+                                                            d="M10.4809 13.8424H15.4C16.2962 13.8424 17 13.1289 17 12.2766V5.56594C17 4.7136 16.2962 4.00012 15.4 4.00012H4.6C3.70383 4.00012 3 4.7136 3 5.56594V12.2766C3 13.1289 3.70383 13.8424 4.6 13.8424H6.19908L6.2 17.0001L6.20346 16.9999L6.20502 16.999L10.4809 13.8424ZM6.79895 17.8035C6.35668 18.1299 5.73 18.0407 5.39921 17.6043C5.26989 17.4336 5.2 17.2263 5.2 17.0134L5.19937 14.8424H4.6C3.16406 14.8424 2 13.6936 2 12.2766V5.56594C2 4.14888 3.16406 3.00012 4.6 3.00012H15.4C16.8359 3.00012 18 4.14888 18 5.56594V12.2766C18 13.6936 16.8359 14.8424 15.4 14.8424H10.81L6.79895 17.8035Z"
+                                                            fill="#0F6CBD"></path>
+                                                    </svg>
+                                                    <div class="d-flex align-items-center clr-grey-61">
+                                                        <span class="screen-reader-text">Post comments count</span>
+                                                        6
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex gap-4">
+                                                    <div class="d-flex align-items-center clr-grey-61">
+                                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path class="dark-theme"
+                                                                d="M10.4965 17.3028L16.7408 10.9994C18.4252 9.28856 18.4199 6.52549 16.7239 4.81249C15.0611 3.13292 12.3961 3.0895 10.6978 4.69086C10.6612 4.72539 10.6251 4.76068 10.5894 4.79673L9.99299 5.40026L9.38843 4.78963C9.35529 4.75616 9.32175 4.72333 9.28783 4.69116C7.58595 3.07726 4.91654 3.10193 3.26122 4.7739C1.5729 6.4792 1.58114 9.25004 3.27679 10.9627L9.55368 17.3028C9.81404 17.5657 10.2362 17.5657 10.4965 17.3028ZM11.3 5.50029C12.5964 4.19135 14.7025 4.19204 16.0133 5.51604C17.3253 6.84123 17.3272 8.97734 16.0292 10.2968L16.0282 10.2978L10.0252 16.3577L3.98743 10.2592C2.67408 8.93263 2.67286 6.78953 3.97185 5.47746C5.26525 4.17106 7.36984 4.17208 8.6778 5.49319L9.63801 6.46306C9.8338 6.66082 10.1534 6.66067 10.349 6.46272L11.3 5.50029Z"
+                                                                fill="#242424"></path>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="d-flex align-items-center clr-grey-61">
+                                                        <span class="screen-reader-text">Post likes count</span>
+                                                        5
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <h3 class="fs-24 fw-600 mb-16">
+                                            <a href="https://devblogs.microsoft.com/visualstudio/custom-agents-in-visual-studio-built-in-and-build-your-own-agents/"
+                                                class="single-click excerpt-title"
+                                                data-bi-id="blog_home_page_latest_posts_grid_card_singleclick"
+                                                data-bi-name="Custom Agents in Visual Studio: Built in and Build-Your-Own agents">
+                                                Custom Agents in Visual Studio: Built in and Build-Your-Own agents </a>
+                                        </h3>
+
+                                        <div class="d-flex gap-6 align-items-center">
+                                            <div class="avatar-parent">
+                                                <img src="https://devblogs.microsoft.com/visualstudio/wp-content/uploads/sites/4/2024/01/DP-microsoft-cropped-96x96.jpg"
+                                                    style="width: 20px; height: 20px;" class="avatar-20 rounded-pill"
+                                                    alt="Rhea Patel">
+                                                <img src="https://devblogs.microsoft.com/visualstudio/wp-content/uploads/sites/4/letter-avatar/9fdb46af5e5863f07b90122d6e56903b.svg"
+                                                    style="width: 20px; height: 20px;" class="avatar-20 rounded-pill"
+                                                    alt="Kelly Fam">
+                                            </div>
+                                            <div class="d-flex gap-6">
+                                                <div class="d-flex fs-14">Rhea,</div>
+                                                <div class="d-flex fs-14">Kelly</div>
+                                            </div>
+                                        </div>
+                                        <p class="excerpt-body mt-16 mb-24">
+                                            Agents in Visual Studio now go beyond a single general-purpose assistant.
+                                            We're shipping a set of curated preset agents that tap into deep IDE
+                                            capabilities; debugging, profiling, testing alongside a framework for
+                                            building your own custom agents tailored to how your team works.
+                                            Built in agents
+                                            Each preset agent is designed around a specific developer workflow and
+                                            integrates with Visual Studio's native tooling in ways that a generic
+                                            assistant can't.
+
+
+
+
+
+
+                                            Access them through the agent picker in the chat panel or using ‘@’ in chat.
+                                            Bring your own: custom agents (preview)
+                                            The presets cover workflow... </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="masonry-card box bg-white d-flex justify-content-between flex-column p-16 gap-20 rounded shadow position-relative border-1 post-card"
+                                data-post-id="255598">
+
+                                <div class="masonry-thumbnail">
+                                    <img class="post-thumbnail wp-image-255600 lazyloaded" width="631" height="596"
+                                        src="https://devblogs.microsoft.com/visualstudio/wp-content/uploads/sites/4/2026/02/find-symbol-tool.webp"
+                                        data-src="https://devblogs.microsoft.com/visualstudio/wp-content/uploads/sites/4/2026/02/find-symbol-tool.webp"
+                                        alt="Unlock language-specific rich symbol context using new find_symbol tool">
+                                </div>
+
+                                <div class="card-body">
+                                    <div class="card-top">
+
+                                        <div
+                                            class="d-flex align-items-center justify-content-between gap-12 mt-16 mb-16">
+                                            <div>
+                                                Feb 11, 2026 </div>
+
+                                            <div class="d-flex gap-12">
+
+
+                                                <div class="d-flex gap-4 clr-grey-61">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path class="dark-theme"
+                                                            d="M10.4809 13.8424H15.4C16.2962 13.8424 17 13.1289 17 12.2766V5.56594C17 4.7136 16.2962 4.00012 15.4 4.00012H4.6C3.70383 4.00012 3 4.7136 3 5.56594V12.2766C3 13.1289 3.70383 13.8424 4.6 13.8424H6.19908L6.2 17.0001L6.20346 16.9999L6.20502 16.999L10.4809 13.8424ZM6.79895 17.8035C6.35668 18.1299 5.73 18.0407 5.39921 17.6043C5.26989 17.4336 5.2 17.2263 5.2 17.0134L5.19937 14.8424H4.6C3.16406 14.8424 2 13.6936 2 12.2766V5.56594C2 4.14888 3.16406 3.00012 4.6 3.00012H15.4C16.8359 3.00012 18 4.14888 18 5.56594V12.2766C18 13.6936 16.8359 14.8424 15.4 14.8424H10.81L6.79895 17.8035Z"
+                                                            fill="#0F6CBD"></path>
+                                                    </svg>
+                                                    <div class="d-flex align-items-center clr-grey-61">
+                                                        <span class="screen-reader-text">Post comments count</span>
+                                                        7
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex gap-4">
+                                                    <div class="d-flex align-items-center clr-grey-61">
+                                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path class="dark-theme"
+                                                                d="M10.4965 17.3028L16.7408 10.9994C18.4252 9.28856 18.4199 6.52549 16.7239 4.81249C15.0611 3.13292 12.3961 3.0895 10.6978 4.69086C10.6612 4.72539 10.6251 4.76068 10.5894 4.79673L9.99299 5.40026L9.38843 4.78963C9.35529 4.75616 9.32175 4.72333 9.28783 4.69116C7.58595 3.07726 4.91654 3.10193 3.26122 4.7739C1.5729 6.4792 1.58114 9.25004 3.27679 10.9627L9.55368 17.3028C9.81404 17.5657 10.2362 17.5657 10.4965 17.3028ZM11.3 5.50029C12.5964 4.19135 14.7025 4.19204 16.0133 5.51604C17.3253 6.84123 17.3272 8.97734 16.0292 10.2968L16.0282 10.2978L10.0252 16.3577L3.98743 10.2592C2.67408 8.93263 2.67286 6.78953 3.97185 5.47746C5.26525 4.17106 7.36984 4.17208 8.6778 5.49319L9.63801 6.46306C9.8338 6.66082 10.1534 6.66067 10.349 6.46272L11.3 5.50029Z"
+                                                                fill="#242424"></path>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="d-flex align-items-center clr-grey-61">
+                                                        <span class="screen-reader-text">Post likes count</span>
+                                                        3
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <h3 class="fs-24 fw-600 mb-16">
+                                            <a href="https://devblogs.microsoft.com/visualstudio/unlock-language-specific-rich-symbol-context-using-new-find_symbol-tool/"
+                                                class="single-click excerpt-title"
+                                                data-bi-id="blog_home_page_latest_posts_grid_card_singleclick"
+                                                data-bi-name="Unlock language-specific rich symbol context using new find_symbol tool">
+                                                Unlock language-specific rich symbol context using new find_symbol tool
+                                            </a>
+                                        </h3>
+
+                                        <div class="d-flex gap-6 align-items-center">
+                                            <div class="avatar-parent">
+                                                <img src="https://devblogs.microsoft.com/visualstudio/wp-content/uploads/sites/4/2023/10/i-WmBC8vP-X4-2-96x96.jpg"
+                                                    style="width: 20px; height: 20px;" class="avatar-20 rounded-pill"
+                                                    alt="Sinem Akinci">
+                                                <img src="https://devblogs.microsoft.com/visualstudio/wp-content/uploads/sites/4/letter-avatar/8e5316cbc6a0c7efcc6b5d6492ae3345.svg"
+                                                    style="width: 20px; height: 20px;" class="avatar-20 rounded-pill"
+                                                    alt="Hannah Hong (SHE/HER)">
+                                            </div>
+                                            <div class="d-flex gap-6">
+                                                <div class="d-flex fs-14">Sinem,</div>
+                                                <div class="d-flex fs-14">Hannah</div>
+                                            </div>
+                                        </div>
+                                        <p class="excerpt-body mt-16 mb-24">
+                                            Refactoring at scale is a time-consuming and error-prone process for
+                                            developers. In large codebases, developers have relied on manual searches
+                                            and incremental edits across multiple files to accomplish these tasks.
+
+                                            Modern development workflows depend on fast and accurate code navigation to
+                                            avoid these pitfalls. When developers refactor existing code, explore
+                                            unfamiliar areas of a large codebase, or make targeted changes, they
+                                            naturally rely on IDE language service features such as Find All References,
+                                            Go to Definition, and Go to Implementation to understand how code is
+                                            structured and connected.
+
+                                            Agent mode no... </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="masonry-card box bg-white d-flex justify-content-between flex-column p-16 gap-20 rounded shadow position-relative border-1 post-card"
+                                data-post-id="255539">
+
+                                <div class="masonry-thumbnail">
+                                    <img class="post-thumbnail wp-image-255541 lazyloaded" width="889" height="460"
+                                        src="https://devblogs.microsoft.com/visualstudio/wp-content/uploads/sites/4/2026/02/Screenshot-2026-02-04-103620.webp"
+                                        data-src="https://devblogs.microsoft.com/visualstudio/wp-content/uploads/sites/4/2026/02/Screenshot-2026-02-04-103620.webp"
+                                        alt="Roadmap for AI in Visual Studio (February)">
+                                </div>
+
+                                <div class="card-body">
+                                    <div class="card-top">
+
+                                        <div
+                                            class="d-flex align-items-center justify-content-between gap-12 mt-16 mb-16">
+                                            <div>
+                                                Feb 4, 2026 </div>
+
+                                            <div class="d-flex gap-12">
+
+
+                                                <div class="d-flex gap-4 clr-grey-61">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path class="dark-theme"
+                                                            d="M10.4809 13.8424H15.4C16.2962 13.8424 17 13.1289 17 12.2766V5.56594C17 4.7136 16.2962 4.00012 15.4 4.00012H4.6C3.70383 4.00012 3 4.7136 3 5.56594V12.2766C3 13.1289 3.70383 13.8424 4.6 13.8424H6.19908L6.2 17.0001L6.20346 16.9999L6.20502 16.999L10.4809 13.8424ZM6.79895 17.8035C6.35668 18.1299 5.73 18.0407 5.39921 17.6043C5.26989 17.4336 5.2 17.2263 5.2 17.0134L5.19937 14.8424H4.6C3.16406 14.8424 2 13.6936 2 12.2766V5.56594C2 4.14888 3.16406 3.00012 4.6 3.00012H15.4C16.8359 3.00012 18 4.14888 18 5.56594V12.2766C18 13.6936 16.8359 14.8424 15.4 14.8424H10.81L6.79895 17.8035Z"
+                                                            fill="#0F6CBD"></path>
+                                                    </svg>
+                                                    <div class="d-flex align-items-center clr-grey-61">
+                                                        <span class="screen-reader-text">Post comments count</span>
+                                                        12
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex gap-4">
+                                                    <div class="d-flex align-items-center clr-grey-61">
+                                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path class="dark-theme"
+                                                                d="M10.4965 17.3028L16.7408 10.9994C18.4252 9.28856 18.4199 6.52549 16.7239 4.81249C15.0611 3.13292 12.3961 3.0895 10.6978 4.69086C10.6612 4.72539 10.6251 4.76068 10.5894 4.79673L9.99299 5.40026L9.38843 4.78963C9.35529 4.75616 9.32175 4.72333 9.28783 4.69116C7.58595 3.07726 4.91654 3.10193 3.26122 4.7739C1.5729 6.4792 1.58114 9.25004 3.27679 10.9627L9.55368 17.3028C9.81404 17.5657 10.2362 17.5657 10.4965 17.3028ZM11.3 5.50029C12.5964 4.19135 14.7025 4.19204 16.0133 5.51604C17.3253 6.84123 17.3272 8.97734 16.0292 10.2968L16.0282 10.2978L10.0252 16.3577L3.98743 10.2592C2.67408 8.93263 2.67286 6.78953 3.97185 5.47746C5.26525 4.17106 7.36984 4.17208 8.6778 5.49319L9.63801 6.46306C9.8338 6.66082 10.1534 6.66067 10.349 6.46272L11.3 5.50029Z"
+                                                                fill="#242424"></path>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="d-flex align-items-center clr-grey-61">
+                                                        <span class="screen-reader-text">Post likes count</span>
+                                                        12
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <h3 class="fs-24 fw-600 mb-16">
+                                            <a href="https://devblogs.microsoft.com/visualstudio/roadmap-for-ai-in-visual-studio-february/"
+                                                class="single-click excerpt-title"
+                                                data-bi-id="blog_home_page_latest_posts_grid_card_singleclick"
+                                                data-bi-name="Roadmap for AI in Visual Studio (February)">
+                                                Roadmap for AI in Visual Studio (February) </a>
+                                        </h3>
+
+                                        <div class="d-flex gap-6 align-items-center">
+                                            <div class="avatar-parent">
+                                                <img src="https://devblogs.microsoft.com/visualstudio/wp-content/uploads/sites/4/2024/01/DP-microsoft-cropped-96x96.jpg"
+                                                    style="width: 20px; height: 20px;" class="avatar-20 rounded-pill a"
+                                                    alt="Rhea Patel">
+                                            </div>
+                                            <span class="fs-14">Rhea Patel</span>
+                                        </div>
+                                        <p class="excerpt-body mt-16 mb-24">
+                                            After a busy January (catch up here), we're shifting focus to reliability
+                                            and refinement. This month is about tightening core workflows, improving
+                                            agent stability, and building on the MCP foundations we've been laying.
+
+
+                                            Agent Mode &amp; Coding Agents
+                                            Reliability is the priority this month. We're raising the floor on
+                                            agent-driven scenarios with:
+
+
+
+
+
+
+
+
+
+                                            Planning Agent
+                                            First steps toward a dedicated agent for multi-step task planning and
+                                            execution.
+
+
+
+                                            Copilot SDK &amp; Platform Integration (Experimental)
+                                            We’re also beginning early work to better integrate the Copilot CLI into
+                                            Vis... </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="masonry-card box bg-white d-flex justify-content-between flex-column p-16 gap-20 rounded shadow position-relative border-1 post-card"
+                                data-post-id="255520">
+
+                                <div class="masonry-thumbnail">
+                                    <img class="post-thumbnail wp-image-255522 lazyload" width="936" height="486"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA6gAAAHmAQMAAABEQjFeAAAAA1BMVEXW1taWrGEgAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAATklEQVR4nO3BMQEAAADCoPVPbQlPoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgY+AEAAFY3RnDAAAAAElFTkSuQmCC"
+                                        data-src="https://devblogs.microsoft.com/visualstudio/wp-content/uploads/sites/4/2026/02/Picture1.webp"
+                                        alt="Performance improvements to MEF-based editor productivity extensions">
+                                </div>
+
+                                <div class="card-body">
+                                    <div class="card-top">
+
+                                        <div
+                                            class="d-flex align-items-center justify-content-between gap-12 mt-16 mb-16">
+                                            <div>
+                                                Feb 3, 2026 </div>
+
+                                            <div class="d-flex gap-12">
+
+
+                                                <div class="d-flex gap-4 clr-grey-61">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path class="dark-theme"
+                                                            d="M10.4809 13.8424H15.4C16.2962 13.8424 17 13.1289 17 12.2766V5.56594C17 4.7136 16.2962 4.00012 15.4 4.00012H4.6C3.70383 4.00012 3 4.7136 3 5.56594V12.2766C3 13.1289 3.70383 13.8424 4.6 13.8424H6.19908L6.2 17.0001L6.20346 16.9999L6.20502 16.999L10.4809 13.8424ZM6.79895 17.8035C6.35668 18.1299 5.73 18.0407 5.39921 17.6043C5.26989 17.4336 5.2 17.2263 5.2 17.0134L5.19937 14.8424H4.6C3.16406 14.8424 2 13.6936 2 12.2766V5.56594C2 4.14888 3.16406 3.00012 4.6 3.00012H15.4C16.8359 3.00012 18 4.14888 18 5.56594V12.2766C18 13.6936 16.8359 14.8424 15.4 14.8424H10.81L6.79895 17.8035Z"
+                                                            fill="#0F6CBD"></path>
+                                                    </svg>
+                                                    <div class="d-flex align-items-center clr-grey-61">
+                                                        <span class="screen-reader-text">Post comments count</span>
+                                                        7
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex gap-4">
+                                                    <div class="d-flex align-items-center clr-grey-61">
+                                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path class="dark-theme"
+                                                                d="M10.4965 17.3028L16.7408 10.9994C18.4252 9.28856 18.4199 6.52549 16.7239 4.81249C15.0611 3.13292 12.3961 3.0895 10.6978 4.69086C10.6612 4.72539 10.6251 4.76068 10.5894 4.79673L9.99299 5.40026L9.38843 4.78963C9.35529 4.75616 9.32175 4.72333 9.28783 4.69116C7.58595 3.07726 4.91654 3.10193 3.26122 4.7739C1.5729 6.4792 1.58114 9.25004 3.27679 10.9627L9.55368 17.3028C9.81404 17.5657 10.2362 17.5657 10.4965 17.3028ZM11.3 5.50029C12.5964 4.19135 14.7025 4.19204 16.0133 5.51604C17.3253 6.84123 17.3272 8.97734 16.0292 10.2968L16.0282 10.2978L10.0252 16.3577L3.98743 10.2592C2.67408 8.93263 2.67286 6.78953 3.97185 5.47746C5.26525 4.17106 7.36984 4.17208 8.6778 5.49319L9.63801 6.46306C9.8338 6.66082 10.1534 6.66067 10.349 6.46272L11.3 5.50029Z"
+                                                                fill="#242424"></path>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="d-flex align-items-center clr-grey-61">
+                                                        <span class="screen-reader-text">Post likes count</span>
+                                                        4
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <h3 class="fs-24 fw-600 mb-16">
+                                            <a href="https://devblogs.microsoft.com/visualstudio/performance-improvements-to-mef-based-editor-productivity-extensions/"
+                                                class="single-click excerpt-title"
+                                                data-bi-id="blog_home_page_latest_posts_grid_card_singleclick"
+                                                data-bi-name="Performance improvements to MEF-based editor productivity extensions">
+                                                Performance improvements to MEF-based editor productivity extensions
+                                            </a>
+                                        </h3>
+
+                                        <div class="d-flex gap-6 align-items-center">
+                                            <div class="avatar-parent">
+                                                <img src="https://devblogs.microsoft.com/visualstudio/wp-content/uploads/sites/4/2025/02/ProfilePic-main-96x96.jpg"
+                                                    style="width: 20px; height: 20px;" class="avatar-20 rounded-pill"
+                                                    alt="Tina Schrepfer (LI)">
+                                                <img src="https://devblogs.microsoft.com/visualstudio/wp-content/uploads/sites/4/2026/02/office3-96x96.webp"
+                                                    style="width: 20px; height: 20px;" class="avatar-20 rounded-pill"
+                                                    alt="Amadeus Wieczorek">
+                                            </div>
+                                            <div class="d-flex gap-6">
+                                                <div class="d-flex fs-14">Tina,</div>
+                                                <div class="d-flex fs-14">Amadeus</div>
+                                            </div>
+                                        </div>
+                                        <p class="excerpt-body mt-16 mb-24">
+                                            If you use editor productivity extensions for Visual Studio 2026, there's
+                                            good news—they can now load faster! Extension developers with existing
+                                            MEF-based editor productivity extensions should read this blog to learn
+                                            about recent changes and how they might be affected.&nbsp;
+
+                                            We introduced&nbsp;VisualStudio.Extensibility&nbsp;to simplify the creation
+                                            of Visual Studio extensions for developers. Previously,
+                                            handling&nbsp;threads&nbsp;in VSSDK-based extensions was often difficult,
+                                            requiring knowledge of thread affinity and even the ins and outs of COM just
+                                            to avoid freezing Visual Studio. The
+                                            new&nbsp;extensibility&nbsp;model&nbsp;abstracts&nbsp;these techni... </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="masonry-card box bg-white d-flex justify-content-between flex-column p-16 gap-20 rounded shadow position-relative border-1 post-card"
+                                data-post-id="255468">
+
+                                <div class="masonry-thumbnail">
+                                    <img class="post-thumbnail wp-image-255475 lazyload" width="2500" height="1406"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAACcQAAAV+AQMAAABoTD0ZAAAAA1BMVEXW1taWrGEgAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABw0lEQVR4nO3BMQEAAADCoPVPbQZ/oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAxwC85gABaULoSAAAAABJRU5ErkJggg=="
+                                        data-src="https://devblogs.microsoft.com/visualstudio/wp-content/uploads/sites/4/2026/01/VS-Jan-update-scaled.webp"
+                                        alt="Visual Studio January Update — Enhanced Editor Experience">
+                                </div>
+
+                                <div class="card-body">
+                                    <div class="card-top">
+
+                                        <div
+                                            class="d-flex align-items-center justify-content-between gap-12 mt-16 mb-16">
+                                            <div>
+                                                Jan 27, 2026 </div>
+
+                                            <div class="d-flex gap-12">
+
+
+                                                <div class="d-flex gap-4 clr-grey-61">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path class="dark-theme"
+                                                            d="M10.4809 13.8424H15.4C16.2962 13.8424 17 13.1289 17 12.2766V5.56594C17 4.7136 16.2962 4.00012 15.4 4.00012H4.6C3.70383 4.00012 3 4.7136 3 5.56594V12.2766C3 13.1289 3.70383 13.8424 4.6 13.8424H6.19908L6.2 17.0001L6.20346 16.9999L6.20502 16.999L10.4809 13.8424ZM6.79895 17.8035C6.35668 18.1299 5.73 18.0407 5.39921 17.6043C5.26989 17.4336 5.2 17.2263 5.2 17.0134L5.19937 14.8424H4.6C3.16406 14.8424 2 13.6936 2 12.2766V5.56594C2 4.14888 3.16406 3.00012 4.6 3.00012H15.4C16.8359 3.00012 18 4.14888 18 5.56594V12.2766C18 13.6936 16.8359 14.8424 15.4 14.8424H10.81L6.79895 17.8035Z"
+                                                            fill="#0F6CBD"></path>
+                                                    </svg>
+                                                    <div class="d-flex align-items-center clr-grey-61">
+                                                        <span class="screen-reader-text">Post comments count</span>
+                                                        16
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex gap-4">
+                                                    <div class="d-flex align-items-center clr-grey-61">
+                                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path class="dark-theme"
+                                                                d="M10.4965 17.3028L16.7408 10.9994C18.4252 9.28856 18.4199 6.52549 16.7239 4.81249C15.0611 3.13292 12.3961 3.0895 10.6978 4.69086C10.6612 4.72539 10.6251 4.76068 10.5894 4.79673L9.99299 5.40026L9.38843 4.78963C9.35529 4.75616 9.32175 4.72333 9.28783 4.69116C7.58595 3.07726 4.91654 3.10193 3.26122 4.7739C1.5729 6.4792 1.58114 9.25004 3.27679 10.9627L9.55368 17.3028C9.81404 17.5657 10.2362 17.5657 10.4965 17.3028ZM11.3 5.50029C12.5964 4.19135 14.7025 4.19204 16.0133 5.51604C17.3253 6.84123 17.3272 8.97734 16.0292 10.2968L16.0282 10.2978L10.0252 16.3577L3.98743 10.2592C2.67408 8.93263 2.67286 6.78953 3.97185 5.47746C5.26525 4.17106 7.36984 4.17208 8.6778 5.49319L9.63801 6.46306C9.8338 6.66082 10.1534 6.66067 10.349 6.46272L11.3 5.50029Z"
+                                                                fill="#242424"></path>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="d-flex align-items-center clr-grey-61">
+                                                        <span class="screen-reader-text">Post likes count</span>
+                                                        6
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <h3 class="fs-24 fw-600 mb-16">
+                                            <a href="https://devblogs.microsoft.com/visualstudio/visual-studio-january-update-enhanced-editor-experience/"
+                                                class="single-click excerpt-title"
+                                                data-bi-id="blog_home_page_latest_posts_grid_card_singleclick"
+                                                data-bi-name="Visual Studio January Update — Enhanced Editor Experience">
+                                                Visual Studio January Update — Enhanced Editor Experience </a>
+                                        </h3>
+
+                                        <div class="d-flex gap-6 align-items-center">
+                                            <div class="avatar-parent">
+                                                <img src="https://devblogs.microsoft.com/visualstudio/wp-content/uploads/sites/4/2025/02/simona_square-96x96.jpg"
+                                                    style="width: 20px; height: 20px;" class="avatar-20 rounded-pill a"
+                                                    alt="Simona Liao">
+                                            </div>
+                                            <span class="fs-14">Simona Liao</span>
+                                        </div>
+                                        <p class="excerpt-body mt-16 mb-24">
+
+                                            Productivity Improvements
+                                            This month, we are bringing you a series of small yet long requested and
+                                            popular features to let you better control and customize your editor. These
+                                            features&nbsp;are currently only available in the Insiders channel and will
+                                            be available in Release soon.
+
+
+
+
+
+
+
+                                            Colorized Code Completions
+                                            Code completions are now colorized with syntax highlighting to help you
+                                            quickly parse suggested code between variables, functions, and other
+                                            elements! To try out this experience, go to Tools &gt; Options &gt; Text
+                                            Editor &gt; Code Completions and check "Use colorized text for code
+                                            comple... </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="masonry-card box bg-white d-flex justify-content-between flex-column p-16 gap-20 rounded shadow position-relative border-1 post-card"
+                                data-post-id="255205">
+
+                                <div class="masonry-thumbnail">
+                                    <img class="post-thumbnail wp-image-255385 lazyload" width="560" height="350"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAjAAAAFeAQMAAAChKbebAAAAA1BMVEXW1taWrGEgAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAL0lEQVR4nO3BMQEAAADCoPVPbQlPoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN4GYRIAAQpQzSsAAAAASUVORK5CYII="
+                                        data-src="https://devblogs.microsoft.com/visualstudio/wp-content/uploads/sites/4/2026/01/VS-logo-featured-image.webp"
+                                        alt="Copilot Memories">
+                                </div>
+
+                                <div class="card-body">
+                                    <div class="card-top">
+
+                                        <div
+                                            class="d-flex align-items-center justify-content-between gap-12 mt-16 mb-16">
+                                            <div>
+                                                Jan 15, 2026 </div>
+
+                                            <div class="d-flex gap-12">
+
+
+                                                <div class="d-flex gap-4 clr-grey-61">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path class="dark-theme"
+                                                            d="M10.4809 13.8424H15.4C16.2962 13.8424 17 13.1289 17 12.2766V5.56594C17 4.7136 16.2962 4.00012 15.4 4.00012H4.6C3.70383 4.00012 3 4.7136 3 5.56594V12.2766C3 13.1289 3.70383 13.8424 4.6 13.8424H6.19908L6.2 17.0001L6.20346 16.9999L6.20502 16.999L10.4809 13.8424ZM6.79895 17.8035C6.35668 18.1299 5.73 18.0407 5.39921 17.6043C5.26989 17.4336 5.2 17.2263 5.2 17.0134L5.19937 14.8424H4.6C3.16406 14.8424 2 13.6936 2 12.2766V5.56594C2 4.14888 3.16406 3.00012 4.6 3.00012H15.4C16.8359 3.00012 18 4.14888 18 5.56594V12.2766C18 13.6936 16.8359 14.8424 15.4 14.8424H10.81L6.79895 17.8035Z"
+                                                            fill="#0F6CBD"></path>
+                                                    </svg>
+                                                    <div class="d-flex align-items-center clr-grey-61">
+                                                        <span class="screen-reader-text">Post comments count</span>
+                                                        10
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex gap-4">
+                                                    <div class="d-flex align-items-center clr-grey-61">
+                                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path class="dark-theme"
+                                                                d="M10.4965 17.3028L16.7408 10.9994C18.4252 9.28856 18.4199 6.52549 16.7239 4.81249C15.0611 3.13292 12.3961 3.0895 10.6978 4.69086C10.6612 4.72539 10.6251 4.76068 10.5894 4.79673L9.99299 5.40026L9.38843 4.78963C9.35529 4.75616 9.32175 4.72333 9.28783 4.69116C7.58595 3.07726 4.91654 3.10193 3.26122 4.7739C1.5729 6.4792 1.58114 9.25004 3.27679 10.9627L9.55368 17.3028C9.81404 17.5657 10.2362 17.5657 10.4965 17.3028ZM11.3 5.50029C12.5964 4.19135 14.7025 4.19204 16.0133 5.51604C17.3253 6.84123 17.3272 8.97734 16.0292 10.2968L16.0282 10.2978L10.0252 16.3577L3.98743 10.2592C2.67408 8.93263 2.67286 6.78953 3.97185 5.47746C5.26525 4.17106 7.36984 4.17208 8.6778 5.49319L9.63801 6.46306C9.8338 6.66082 10.1534 6.66067 10.349 6.46272L11.3 5.50029Z"
+                                                                fill="#242424"></path>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="d-flex align-items-center clr-grey-61">
+                                                        <span class="screen-reader-text">Post likes count</span>
+                                                        7
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <h3 class="fs-24 fw-600 mb-16">
+                                            <a href="https://devblogs.microsoft.com/visualstudio/copilot-memories/"
+                                                class="single-click excerpt-title"
+                                                data-bi-id="blog_home_page_latest_posts_grid_card_singleclick"
+                                                data-bi-name="Copilot Memories">
+                                                Copilot Memories </a>
+                                        </h3>
+
+                                        <div class="d-flex gap-6 align-items-center">
+                                            <div class="avatar-parent">
+                                                <img src="https://devblogs.microsoft.com/visualstudio/wp-content/uploads/sites/4/2022/08/headshot-96x96.jpg"
+                                                    style="width: 20px; height: 20px;" class="avatar-20 rounded-pill a"
+                                                    alt="Jessie Houghton">
+                                            </div>
+                                            <span class="fs-14">Jessie Houghton</span>
+                                        </div>
+                                        <p class="excerpt-body mt-16 mb-24">
+                                            Are you wasting time reviewing code for nits on code standards, project
+                                            preferences, or important contribution guidelines? We know the pain.
+                                            It’s&nbsp;all too easy for best practices and those tiny but critical team
+                                            details to slip through the cracks, resulting in inconsistencies, confusion,
+                                            and wasted time. But now,&nbsp;there’s&nbsp;a smarter way to
+                                            ensure&nbsp;everyone’s&nbsp;always on the same page!
+
+
+                                            How Copilot memories make teamwork effortless&nbsp;
+                                            Introducing Copilot memories, a new feature that empowers every developer
+                                            and team to capture, remember, and share their coding preferences and
+                                            important project guidelines, automatical... </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="masonry-card box bg-white d-flex justify-content-between flex-column p-16 gap-20 rounded shadow position-relative border-1 post-card"
+                                data-post-id="255343">
+
+                                <div class="masonry-thumbnail">
+                                    <img class="post-thumbnail wp-image-255355 lazyload" width="1536" height="1024"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABgAAAAQAAQMAAAAdvwABAAAAA1BMVEXW1taWrGEgAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA1ElEQVR4nO3BAQEAAACAkP6v7ggKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABqBC0AAUpmIOoAAAAASUVORK5CYII="
+                                        data-src="https://devblogs.microsoft.com/visualstudio/wp-content/uploads/sites/4/2025/12/Blog-Post-VS-Live-Events-Final2.webp"
+                                        alt="Welcome to 2026, A Growth Year for All of Us">
+                                </div>
+
+                                <div class="card-body">
+                                    <div class="card-top">
+
+                                        <div
+                                            class="d-flex align-items-center justify-content-between gap-12 mt-16 mb-16">
+                                            <div>
+                                                Jan 5, 2026 </div>
+
+                                            <div class="d-flex gap-12">
+
+
+                                                <div class="d-flex gap-4 clr-grey-61">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path class="dark-theme"
+                                                            d="M10.4809 13.8424H15.4C16.2962 13.8424 17 13.1289 17 12.2766V5.56594C17 4.7136 16.2962 4.00012 15.4 4.00012H4.6C3.70383 4.00012 3 4.7136 3 5.56594V12.2766C3 13.1289 3.70383 13.8424 4.6 13.8424H6.19908L6.2 17.0001L6.20346 16.9999L6.20502 16.999L10.4809 13.8424ZM6.79895 17.8035C6.35668 18.1299 5.73 18.0407 5.39921 17.6043C5.26989 17.4336 5.2 17.2263 5.2 17.0134L5.19937 14.8424H4.6C3.16406 14.8424 2 13.6936 2 12.2766V5.56594C2 4.14888 3.16406 3.00012 4.6 3.00012H15.4C16.8359 3.00012 18 4.14888 18 5.56594V12.2766C18 13.6936 16.8359 14.8424 15.4 14.8424H10.81L6.79895 17.8035Z"
+                                                            fill="#0F6CBD"></path>
+                                                    </svg>
+                                                    <div class="d-flex align-items-center clr-grey-61">
+                                                        <span class="screen-reader-text">Post comments count</span>
+                                                        1
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex gap-4">
+                                                    <div class="d-flex align-items-center clr-grey-61">
+                                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path class="dark-theme"
+                                                                d="M10.4965 17.3028L16.7408 10.9994C18.4252 9.28856 18.4199 6.52549 16.7239 4.81249C15.0611 3.13292 12.3961 3.0895 10.6978 4.69086C10.6612 4.72539 10.6251 4.76068 10.5894 4.79673L9.99299 5.40026L9.38843 4.78963C9.35529 4.75616 9.32175 4.72333 9.28783 4.69116C7.58595 3.07726 4.91654 3.10193 3.26122 4.7739C1.5729 6.4792 1.58114 9.25004 3.27679 10.9627L9.55368 17.3028C9.81404 17.5657 10.2362 17.5657 10.4965 17.3028ZM11.3 5.50029C12.5964 4.19135 14.7025 4.19204 16.0133 5.51604C17.3253 6.84123 17.3272 8.97734 16.0292 10.2968L16.0282 10.2978L10.0252 16.3577L3.98743 10.2592C2.67408 8.93263 2.67286 6.78953 3.97185 5.47746C5.26525 4.17106 7.36984 4.17208 8.6778 5.49319L9.63801 6.46306C9.8338 6.66082 10.1534 6.66067 10.349 6.46272L11.3 5.50029Z"
+                                                                fill="#242424"></path>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="d-flex align-items-center clr-grey-61">
+                                                        <span class="screen-reader-text">Post likes count</span>
+                                                        6
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <h3 class="fs-24 fw-600 mb-16">
+                                            <a href="https://devblogs.microsoft.com/visualstudio/vs-live-2026-immersive-learning-for-vs2026/"
+                                                class="single-click excerpt-title"
+                                                data-bi-id="blog_home_page_latest_posts_grid_card_singleclick"
+                                                data-bi-name="Welcome to 2026, A Growth Year for All of Us">
+                                                Welcome to 2026, A Growth Year for All of Us </a>
+                                        </h3>
+
+                                        <div class="d-flex gap-6 align-items-center">
+                                            <div class="avatar-parent">
+                                                <img src="https://devblogs.microsoft.com/visualstudio/wp-content/uploads/sites/4/2022/11/IMG_1377-96x96.jpg"
+                                                    style="width: 20px; height: 20px;" class="avatar-20 rounded-pill a"
+                                                    alt="Jim Harrer">
+                                            </div>
+                                            <span class="fs-14">Jim Harrer</span>
+                                        </div>
+                                        <p class="excerpt-body mt-16 mb-24">
+                                            I always enjoy the quiet stretch between Christmas and New Year’s. It’s one
+                                            of the few moments in the year when things slow down just enough to reflect
+                                            on what actually resonated.
+                                            While many of us were unplugging, our digital team was doing the opposite,
+                                            editing and publishing 19 sessions from VS Live! Orlando to the Visual
+                                            Studio YouTube channel. What surprised me wasn’t just the pace at which
+                                            those sessions went live, it was what happened next.
+                                            During the holidays alone, those sessions were viewed nearly 30,000 times.
+                                            That tells me two things. First, learning doesn’t stop just because the
+                                            calendar does. Seco... </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="masonry-card box bg-white d-flex justify-content-between flex-column p-16 gap-20 rounded shadow position-relative border-1 post-card"
+                                data-post-id="255244">
+
+                                <div class="masonry-thumbnail">
+                                    <img class="post-thumbnail wp-image-255250 lazyload" width="624" height="344"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnAAAAFYAQMAAADpylMmAAAAA1BMVEXW1taWrGEgAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAMUlEQVR4nO3BMQEAAADCoPVPbQo/oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeBhqKAABq4NpwwAAAABJRU5ErkJggg=="
+                                        data-src="https://devblogs.microsoft.com/visualstudio/wp-content/uploads/sites/4/2025/12/Picture6-1.webp"
+                                        alt="How AI fixed my procrastination">
+                                </div>
+
+                                <div class="card-body">
+                                    <div class="card-top">
+
+                                        <div
+                                            class="d-flex align-items-center justify-content-between gap-12 mt-16 mb-16">
+                                            <div>
+                                                Dec 22, 2025 </div>
+
+                                            <div class="d-flex gap-12">
+
+
+                                                <div class="d-flex gap-4 clr-grey-61">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path class="dark-theme"
+                                                            d="M10.4809 13.8424H15.4C16.2962 13.8424 17 13.1289 17 12.2766V5.56594C17 4.7136 16.2962 4.00012 15.4 4.00012H4.6C3.70383 4.00012 3 4.7136 3 5.56594V12.2766C3 13.1289 3.70383 13.8424 4.6 13.8424H6.19908L6.2 17.0001L6.20346 16.9999L6.20502 16.999L10.4809 13.8424ZM6.79895 17.8035C6.35668 18.1299 5.73 18.0407 5.39921 17.6043C5.26989 17.4336 5.2 17.2263 5.2 17.0134L5.19937 14.8424H4.6C3.16406 14.8424 2 13.6936 2 12.2766V5.56594C2 4.14888 3.16406 3.00012 4.6 3.00012H15.4C16.8359 3.00012 18 4.14888 18 5.56594V12.2766C18 13.6936 16.8359 14.8424 15.4 14.8424H10.81L6.79895 17.8035Z"
+                                                            fill="#0F6CBD"></path>
+                                                    </svg>
+                                                    <div class="d-flex align-items-center clr-grey-61">
+                                                        <span class="screen-reader-text">Post comments count</span>
+                                                        13
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex gap-4">
+                                                    <div class="d-flex align-items-center clr-grey-61">
+                                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path class="dark-theme"
+                                                                d="M10.4965 17.3028L16.7408 10.9994C18.4252 9.28856 18.4199 6.52549 16.7239 4.81249C15.0611 3.13292 12.3961 3.0895 10.6978 4.69086C10.6612 4.72539 10.6251 4.76068 10.5894 4.79673L9.99299 5.40026L9.38843 4.78963C9.35529 4.75616 9.32175 4.72333 9.28783 4.69116C7.58595 3.07726 4.91654 3.10193 3.26122 4.7739C1.5729 6.4792 1.58114 9.25004 3.27679 10.9627L9.55368 17.3028C9.81404 17.5657 10.2362 17.5657 10.4965 17.3028ZM11.3 5.50029C12.5964 4.19135 14.7025 4.19204 16.0133 5.51604C17.3253 6.84123 17.3272 8.97734 16.0292 10.2968L16.0282 10.2978L10.0252 16.3577L3.98743 10.2592C2.67408 8.93263 2.67286 6.78953 3.97185 5.47746C5.26525 4.17106 7.36984 4.17208 8.6778 5.49319L9.63801 6.46306C9.8338 6.66082 10.1534 6.66067 10.349 6.46272L11.3 5.50029Z"
+                                                                fill="#242424"></path>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="d-flex align-items-center clr-grey-61">
+                                                        <span class="screen-reader-text">Post likes count</span>
+                                                        25
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <h3 class="fs-24 fw-600 mb-16">
+                                            <a href="https://devblogs.microsoft.com/visualstudio/how-ai-fixed-my-procrastination/"
+                                                class="single-click excerpt-title"
+                                                data-bi-id="blog_home_page_latest_posts_grid_card_singleclick"
+                                                data-bi-name="How AI fixed my procrastination">
+                                                How AI fixed my procrastination </a>
+                                        </h3>
+
+                                        <div class="d-flex gap-6 align-items-center">
+                                            <div class="avatar-parent">
+                                                <img src="https://devblogs.microsoft.com/visualstudio/wp-content/uploads/sites/4/2021/09/Mads-glasses-square-96x96.jpg"
+                                                    style="width: 20px; height: 20px;" class="avatar-20 rounded-pill a"
+                                                    alt="Mads Kristensen">
+                                            </div>
+                                            <span class="fs-14">Mads Kristensen</span>
+                                        </div>
+                                        <p class="excerpt-body mt-16 mb-24">
+                                            I struggled to get started. For ages, I kept putting off building this
+                                            website, creating a new programming language for Visual Studio, and coming
+                                            up with fresh color themes. Each project looked overwhelming, and I couldn’t
+                                            find the time or motivation to jump in. It all just felt like too much at
+                                            once.
+
+                                            But when a national holiday gave me a long weekend, I grabbed the chance to
+                                            try out Copilot in Visual Studio and see how far I could get. To my
+                                            surprise, I knocked out all three projects way faster and more easily than I
+                                            expected. I’m sharing what I learned because I hope it inspires you to
+                                            finally tackle those p... </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="fs-16 d-flex justify-content-center mt-40">
+                        <a href="https://devblogs.microsoft.com/visualstudio/page/2/" class="read-more btn-secondary"
+                            id="pload-more" data-bi-area="latest_posts"
+                            data-bi-id="blog_home_page_latest_posts_grid_load_more" data-bi-name="Load more posts"
+                            data-siteid="4">Load more posts</a>
+                    </div>
+
+                    <div id="loader-overlay" class="lp-loader" style="display:none;">
+                        <div class="cv-spinner">
+                            <span class="spinner"></span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <aside class="p-12 bh-sidebar" data-bi-area="sidebar">
+                    <!-- Sidebar CTA -->
+                    <style>
+                        .toggleWrapper:last-child {
+                            border: none;
+                        }
+
+                        .toggleButton {
+                            cursor: pointer;
+                            border-radius: 4px;
+                        }
+                    </style>
+                    <div class="border-bottom mb-40" data-bi-compnm="banner_sidebar"
+                        data-bi-id="blog_home_page_banner_sidebar"
+                        data-bi-hn="Dream big. Achieve more. Visual Studio 2026.">
+                        <h2 class="fs-20 mb-8">Dream big. Achieve more. Visual Studio 2026.</h2>
+                        <p class="mb-16">Unleash your potential with the world’s most popular IDE for the professional
+                            developer.</p><a class="btn-primary d-inline-flex mb-40"
+                            href="https://visualstudio.microsoft.com/downloads/" target="_blank">Download Visual
+                            Studio</a>
+                    </div>
+                    <!-- trending topics -->
+                    <div class="border-bottom mb-40">
+                        <h2 class="fs-20 mb-16">Popular topics</h2>
+                        <div class="d-flex flex-wrap gap-8 post-topics-list mb-40"
+                            data-bi-id="blog_home_page_sidebar_popular_topics">
+
+                            <a class="d-flex align-items-center btn-outline-secondary fw-600 px-6"
+                                href="https://devblogs.microsoft.com/visualstudio/tag/github-copilot/">GitHub
+                                Copilot</a><a class="d-flex align-items-center btn-outline-secondary fw-600 px-6"
+                                href="https://devblogs.microsoft.com/visualstudio/tag/announcement/">Announcement</a><a
+                                class="d-flex align-items-center btn-outline-secondary fw-600 px-6"
+                                href="https://devblogs.microsoft.com/visualstudio/tag/cloud/">cloud</a><a
+                                class="d-flex align-items-center btn-outline-secondary fw-600 px-6"
+                                href="https://devblogs.microsoft.com/visualstudio/tag/web/">Web</a><a
+                                class="d-flex align-items-center btn-outline-secondary fw-600 px-6"
+                                href="https://devblogs.microsoft.com/visualstudio/tag/gaming/">gaming</a><a
+                                class="d-flex align-items-center btn-outline-secondary fw-600 px-6"
+                                href="https://devblogs.microsoft.com/visualstudio/tag/extensions/">Extensions</a><a
+                                class="d-flex align-items-center btn-outline-secondary fw-600 px-6"
+                                href="https://devblogs.microsoft.com/visualstudio/tag/productivity/">Productivity</a><a
+                                class="d-flex align-items-center btn-outline-secondary fw-600 px-6"
+                                href="https://devblogs.microsoft.com/visualstudio/tag/ai/">Artificial Intelligence</a><a
+                                class="d-flex align-items-center btn-outline-secondary fw-600 px-6"
+                                href="https://devblogs.microsoft.com/visualstudio/tag/cpp/">C++</a><a
+                                class="d-flex align-items-center btn-outline-secondary fw-600 px-6"
+                                href="https://devblogs.microsoft.com/visualstudio/tag/csharp/">C#</a>
+                        </div>
+                    </div>
+
+
+                    <!-- Links -->
+                    <div class="mb-40 pb-24 border-bottom">
+                        <!-- First section -->
+                        <div class="border-bottom mb-16 toggleWrapper"
+                            data-bi-id="blog_home_page_sidebar_relevant_links"><button
+                                class="btn-no-styles w-100 d-flex justify-content-between px-8 mb-16 toggleButton"
+                                aria-expanded="false" aria-controls="leftContentOther"
+                                data-bi-id="blog_home_page_sidebar_relevant_links_expand">
+                                <h2 class="fs-20">Relevant Links</h2>
+                                <div class="toggleIcon d-flex align-items-center"><svg width="20" height="20"
+                                        viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="dark-theme"
+                                            d="M7.64582 4.14708C7.84073 3.95147 8.15731 3.9509 8.35292 4.14582L13.8374 9.6108C14.0531 9.82574 14.0531 10.1751 13.8374 10.39L8.35292 15.855C8.15731 16.0499 7.84073 16.0493 7.64582 15.8537C7.4509 15.6581 7.45147 15.3415 7.64708 15.1466L12.8117 10.0004L7.64708 4.85418C7.45147 4.65927 7.4509 4.34269 7.64582 4.14708Z"
+                                            fill="#242424"></path>
+                                    </svg></div>
+                            </button>
+                            <div id="leftContentOther" class="toggleContent px-8 pb-12 mb-16 scroll-bar"
+                                style="display: none;"><span class="card-text listdisplay cs-content">
+                                    <ul>
+                                        <li><a href="https://visualstudio.microsoft.com/" target="_blank"
+                                                rel="noopener">Visual Studio homepage</a></li>
+                                        <li><a href="https://learn.microsoft.com/visualstudio/" target="_blank"
+                                                rel="noopener">Visual Studio documentation</a></li>
+                                        <li><a href="https://visualstudio.microsoft.com/dev-essentials/" target="_blank"
+                                                rel="noopener">Visual Studio Dev Essentials</a></li>
+                                        <li><a href="https://azure.microsoft.com/" target="_blank"
+                                                rel="noopener">Microsoft Azure</a></li>
+                                    </ul>
+                                    <p><strong>Visual Studio on YouTube</strong></p>
+                                    <ul>
+                                        <li><a href="https://www.youtube.com/playlist?list=PLReL099Y5nRc-zbaFbf0aNcIamBQujOxP"
+                                                target="_blank">Visual Studio Tips &amp; Tricks</a></li>
+                                        <li><a href="https://www.youtube.com/playlist?list=PLReL099Y5nReWwlUgypSKwptZm3ljLOhX"
+                                                target="_blank">Visual Studio Toolbox</a></li>
+                                        <li><a href="https://www.youtube.com/playlist?list=PLReL099Y5nRem6UA4w849hTfd0LzBIsAk"
+                                                target="_blank">Visual Studio Office Hours</a></li>
+                                        <li><a href="https://www.youtube.com/playlist?list=PLReL099Y5nRdG2n1PrY_tbCsUznoYvqkS"
+                                                target="_blank">Writing extensions with Mads</a></li>
+                                    </ul>
+                                </span></div>
+                        </div>
+                        <!-- Second section -->
+
+
+                        <!-- Third section -->
+                        <div class="border-bottom mb-16 toggleWrapper" data-bi-id="blog_home_page_sidebar_archive">
+                            <button class="btn-no-styles w-100 d-flex justify-content-between px-8 mb-16 toggleButton"
+                                aria-expanded="false" aria-controls="rightContentArchive"
+                                data-bi-id="blog_home_page_sidebar_archive_expand">
+                                <h2 class="fs-20">Archive</h2>
+                                <div class="toggleIcon d-flex align-items-center"><svg width="20" height="20"
+                                        viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="dark-theme"
+                                            d="M7.64582 4.14708C7.84073 3.95147 8.15731 3.9509 8.35292 4.14582L13.8374 9.6108C14.0531 9.82574 14.0531 10.1751 13.8374 10.39L8.35292 15.855C8.15731 16.0499 7.84073 16.0493 7.64582 15.8537C7.4509 15.6581 7.45147 15.3415 7.64708 15.1466L12.8117 10.0004L7.64708 4.85418C7.45147 4.65927 7.4509 4.34269 7.64582 4.14708Z"
+                                            fill="#242424"></path>
+                                    </svg></div>
+                            </button>
+                            <div id="rightContentArchive" class="toggleContent px-8 pb-32 scroll-bar"
+                                style="display: none;"><span class="card-text listdisplay">
+                                    <ul class="ftr-archives" role="list">
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2026/02/">February
+                                                2026</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2026/01/">January
+                                                2026</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2025/12/">December
+                                                2025</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2025/11/">November
+                                                2025</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2025/10/">October
+                                                2025</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2025/09/">September
+                                                2025</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2025/08/">August
+                                                2025</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2025/07/">July 2025</a>
+                                        </li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2025/06/">June 2025</a>
+                                        </li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2025/05/">May 2025</a>
+                                        </li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2025/04/">April
+                                                2025</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2025/03/">March
+                                                2025</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2025/02/">February
+                                                2025</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2025/01/">January
+                                                2025</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2024/12/">December
+                                                2024</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2024/11/">November
+                                                2024</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2024/10/">October
+                                                2024</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2024/09/">September
+                                                2024</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2024/08/">August
+                                                2024</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2024/07/">July 2024</a>
+                                        </li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2024/06/">June 2024</a>
+                                        </li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2024/05/">May 2024</a>
+                                        </li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2024/04/">April
+                                                2024</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2024/03/">March
+                                                2024</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2024/02/">February
+                                                2024</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2024/01/">January
+                                                2024</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2023/12/">December
+                                                2023</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2023/11/">November
+                                                2023</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2023/10/">October
+                                                2023</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2023/09/">September
+                                                2023</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2023/08/">August
+                                                2023</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2023/07/">July 2023</a>
+                                        </li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2023/06/">June 2023</a>
+                                        </li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2023/05/">May 2023</a>
+                                        </li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2023/04/">April
+                                                2023</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2023/03/">March
+                                                2023</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2023/02/">February
+                                                2023</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2023/01/">January
+                                                2023</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2022/12/">December
+                                                2022</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2022/11/">November
+                                                2022</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2022/10/">October
+                                                2022</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2022/09/">September
+                                                2022</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2022/08/">August
+                                                2022</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2022/07/">July 2022</a>
+                                        </li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2022/06/">June 2022</a>
+                                        </li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2022/05/">May 2022</a>
+                                        </li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2022/04/">April
+                                                2022</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2022/03/">March
+                                                2022</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2022/02/">February
+                                                2022</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2022/01/">January
+                                                2022</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2021/12/">December
+                                                2021</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2021/11/">November
+                                                2021</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2021/10/">October
+                                                2021</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2021/09/">September
+                                                2021</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2021/08/">August
+                                                2021</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2021/07/">July 2021</a>
+                                        </li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2021/06/">June 2021</a>
+                                        </li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2021/05/">May 2021</a>
+                                        </li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2021/04/">April
+                                                2021</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2021/03/">March
+                                                2021</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2021/02/">February
+                                                2021</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2021/01/">January
+                                                2021</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2020/12/">December
+                                                2020</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2020/11/">November
+                                                2020</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2020/10/">October
+                                                2020</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2020/09/">September
+                                                2020</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2020/08/">August
+                                                2020</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2020/07/">July 2020</a>
+                                        </li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2020/06/">June 2020</a>
+                                        </li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2020/05/">May 2020</a>
+                                        </li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2020/04/">April
+                                                2020</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2020/03/">March
+                                                2020</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2020/02/">February
+                                                2020</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2020/01/">January
+                                                2020</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2019/12/">December
+                                                2019</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2019/11/">November
+                                                2019</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2019/10/">October
+                                                2019</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2019/09/">September
+                                                2019</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2019/08/">August
+                                                2019</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2019/07/">July 2019</a>
+                                        </li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2019/06/">June 2019</a>
+                                        </li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2019/05/">May 2019</a>
+                                        </li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2019/04/">April
+                                                2019</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2019/03/">March
+                                                2019</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2019/02/">February
+                                                2019</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2019/01/">January
+                                                2019</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2018/12/">December
+                                                2018</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2018/11/">November
+                                                2018</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2018/10/">October
+                                                2018</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2018/09/">September
+                                                2018</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2018/08/">August
+                                                2018</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2018/07/">July 2018</a>
+                                        </li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2018/06/">June 2018</a>
+                                        </li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2018/05/">May 2018</a>
+                                        </li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2018/04/">April
+                                                2018</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2018/03/">March
+                                                2018</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2018/02/">February
+                                                2018</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2018/01/">January
+                                                2018</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2017/12/">December
+                                                2017</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2017/11/">November
+                                                2017</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2017/10/">October
+                                                2017</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2017/09/">September
+                                                2017</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2017/08/">August
+                                                2017</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2017/07/">July 2017</a>
+                                        </li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2017/06/">June 2017</a>
+                                        </li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2017/05/">May 2017</a>
+                                        </li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2017/04/">April
+                                                2017</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2017/03/">March
+                                                2017</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2017/02/">February
+                                                2017</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2017/01/">January
+                                                2017</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2016/12/">December
+                                                2016</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2016/11/">November
+                                                2016</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2016/10/">October
+                                                2016</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2016/08/">August
+                                                2016</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2016/07/">July 2016</a>
+                                        </li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2016/06/">June 2016</a>
+                                        </li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2016/05/">May 2016</a>
+                                        </li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2016/04/">April
+                                                2016</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2016/03/">March
+                                                2016</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2016/02/">February
+                                                2016</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2016/01/">January
+                                                2016</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2015/12/">December
+                                                2015</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2015/11/">November
+                                                2015</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2015/10/">October
+                                                2015</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2015/09/">September
+                                                2015</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2015/08/">August
+                                                2015</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2015/07/">July 2015</a>
+                                        </li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2015/06/">June 2015</a>
+                                        </li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2015/05/">May 2015</a>
+                                        </li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2015/04/">April
+                                                2015</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2015/03/">March
+                                                2015</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2015/02/">February
+                                                2015</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2015/01/">January
+                                                2015</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2014/12/">December
+                                                2014</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2014/11/">November
+                                                2014</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2014/10/">October
+                                                2014</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2014/09/">September
+                                                2014</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2014/08/">August
+                                                2014</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2014/07/">July 2014</a>
+                                        </li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2014/06/">June 2014</a>
+                                        </li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2014/05/">May 2014</a>
+                                        </li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2014/04/">April
+                                                2014</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2014/03/">March
+                                                2014</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2014/02/">February
+                                                2014</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2014/01/">January
+                                                2014</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2013/12/">December
+                                                2013</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2013/11/">November
+                                                2013</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2013/10/">October
+                                                2013</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2013/09/">September
+                                                2013</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2013/08/">August
+                                                2013</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2013/07/">July 2013</a>
+                                        </li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2013/06/">June 2013</a>
+                                        </li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2013/05/">May 2013</a>
+                                        </li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2013/04/">April
+                                                2013</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2013/03/">March
+                                                2013</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2013/01/">January
+                                                2013</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2012/11/">November
+                                                2012</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2012/10/">October
+                                                2012</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2012/09/">September
+                                                2012</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2012/08/">August
+                                                2012</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2012/07/">July 2012</a>
+                                        </li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2012/06/">June 2012</a>
+                                        </li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2012/05/">May 2012</a>
+                                        </li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2012/04/">April
+                                                2012</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2012/03/">March
+                                                2012</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2012/02/">February
+                                                2012</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2012/01/">January
+                                                2012</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2011/11/">November
+                                                2011</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2011/10/">October
+                                                2011</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2011/09/">September
+                                                2011</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2011/08/">August
+                                                2011</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2011/05/">May 2011</a>
+                                        </li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2011/04/">April
+                                                2011</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2011/03/">March
+                                                2011</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2011/02/">February
+                                                2011</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2011/01/">January
+                                                2011</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2010/12/">December
+                                                2010</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2010/11/">November
+                                                2010</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2010/10/">October
+                                                2010</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2010/09/">September
+                                                2010</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2010/08/">August
+                                                2010</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2010/07/">July 2010</a>
+                                        </li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2010/06/">June 2010</a>
+                                        </li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2010/05/">May 2010</a>
+                                        </li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2010/04/">April
+                                                2010</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2010/03/">March
+                                                2010</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2010/02/">February
+                                                2010</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2010/01/">January
+                                                2010</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2009/12/">December
+                                                2009</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2009/11/">November
+                                                2009</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2009/10/">October
+                                                2009</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2009/09/">September
+                                                2009</a></li>
+                                        <li><a href="https://devblogs.microsoft.com/visualstudio/2009/03/">March
+                                                2009</a></li>
+                                    </ul>
+                                </span></div>
+                        </div>
+                        <!-- Repeat the above structure for each toggle -->
+                    </div>
+
+                    <div class="mb-40">
+                        <h2 class="fs-20 mb-16">Follow this blog</h2>
+                        <div class="d-flex flex-wrap gap-20 mb-40" data-bi-hn="Follow this blog">
+                            <a style="width: 24px; height: 24px; position: relative;" title="facebook"
+                                data-bi-id="blog_home_page_sidebar_follow_this_blog"
+                                data-bi-name="Visual Studio Blog-facebook" aria-label="Follow Us on Facebook"
+                                target="_blank" href="https://www.facebook.com/visualstudio/"><img
+                                    src="https://devblogs.microsoft.com/visualstudio/wp-content/themes/devblogs-evo/images/social-icons/facebook.svg"
+                                    alt="facebook"></a><a style="width: 24px; height: 24px; position: relative;"
+                                title="twitter" data-bi-id="blog_home_page_sidebar_follow_this_blog"
+                                data-bi-name="Visual Studio Blog-twitter" aria-label="Follow Us on Twitter"
+                                target="_blank" href="https://twitter.com/VisualStudio"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path class="dark-theme"
+                                        d="M14.4821 10.6218L21.0389 3H19.4852L13.7919 9.61788L9.24467 3H4L10.8763 13.0074L4 21H5.55384L11.5661 14.0113L16.3683 21H21.613L14.4817 10.6218H14.4821ZM12.3539 13.0956L11.6572 12.0991L6.11372 4.16971H8.50033L12.974 10.5689L13.6707 11.5655L19.4859 19.8835H17.0993L12.3539 13.096V13.0956Z">
+                                    </path>
+                                </svg></a><a style="width: 24px; height: 24px; position: relative;" title="linkedin"
+                                data-bi-id="blog_home_page_sidebar_follow_this_blog"
+                                data-bi-name="Visual Studio Blog-linkedin" aria-label="Follow Us on LinkedIn"
+                                target="_blank" href="https://www.linkedin.com/showcase/microsoft-visual-studio/"><img
+                                    src="https://devblogs.microsoft.com/visualstudio/wp-content/themes/devblogs-evo/images/social-icons/linkedin.svg"
+                                    alt="linkedin"></a><a style="width: 24px; height: 24px; position: relative;"
+                                title="youtube" data-bi-id="blog_home_page_sidebar_follow_this_blog"
+                                data-bi-name="Visual Studio Blog-youtube" aria-label="Follow Us on YouTube"
+                                target="_blank" href="https://www.youtube.com/visualstudio"><img
+                                    src="https://devblogs.microsoft.com/visualstudio/wp-content/themes/devblogs-evo/images/social-icons/youtube.svg"
+                                    alt="youtube"></a><a style="width: 24px; height: 24px; position: relative;"
+                                title="twitch" data-bi-id="blog_home_page_sidebar_follow_this_blog"
+                                data-bi-name="Visual Studio Blog-twitch" aria-label="Follow Us on Twitch"
+                                target="_blank" href="https://www.twitch.tv/visualstudio"><img
+                                    src="https://devblogs.microsoft.com/visualstudio/wp-content/themes/devblogs-evo/images/social-icons/twitch.svg"
+                                    alt="twitch"></a><a style="width: 24px; height: 24px; position: relative;"
+                                title="TikTok" data-bi-id="blog_home_page_sidebar_follow_this_blog"
+                                data-bi-name="Visual Studio Blog-tiktok" aria-label="Follow Us on TikTok"
+                                target="_blank" href="https://www.tiktok.com/@visualstudio"><img
+                                    src="https://devblogs.microsoft.com/visualstudio/wp-content/themes/devblogs-evo/images/social-icons/tiktok.svg"
+                                    alt="TikTok"></a><a style="width: 24px; height: 24px; position: relative;"
+                                title="RSS Feed" data-bi-id="blog_home_page_sidebar_follow_this_blog"
+                                data-bi-name="Visual Studio Blog-rss-feed" aria-label="Subscribe to Our RSS Feed"
+                                target="_blank" href="https://devblogs.microsoft.com/visualstudio/feed/"><svg width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    class="dark-theme-rss">
+                                    <path class="dark-theme"
+                                        d="M6.25 3C4.45507 3 3 4.45507 3 6.25V17.75C3 19.5449 4.45507 21 6.25 21H17.75C19.5449 21 21 19.5449 21 17.75V6.25C21 4.45507 19.5449 3 17.75 3H6.25ZM6.75 7.5C6.34494 7.5 6 7.18276 6 6.7777V6.7233C6 6.33021 6.30507 6.00189 6.69816 6.00012L6.75 6C12.9632 6 18 11.0368 18 17.25L17.9999 17.3018C17.9981 17.6949 17.6698 18 17.2767 18H17.2223C16.8172 18 16.5 17.6551 16.5 17.25C16.5 11.8652 12.1348 7.5 6.75 7.5ZM13.294 18H13.2036C12.805 18 12.5 17.6486 12.5 17.25C12.5 14.0744 9.92564 11.5 6.75 11.5C6.35135 11.5 6 11.195 6 10.7964V10.706C6 10.3267 6.2871 10.0048 6.66639 10.0005C6.69422 10.0002 6.72209 10 6.75 10C10.7541 10 14 13.2459 14 17.25C14 17.2779 13.9998 17.3058 13.9995 17.3336C13.9952 17.7129 13.6733 18 13.294 18ZM7.5 18C6.67157 18 6 17.3284 6 16.5C6 15.6716 6.67157 15 7.5 15C8.32843 15 9 15.6716 9 16.5C9 17.3284 8.32843 18 7.5 18Z"
+                                        fill="#DA3B01"></path>
+                                </svg></a>
+                        </div>
+                        <div class="newsletter-form w-100" id="subscribe_form" data-bi-area="sidebar"
+                            data-bi-id="blog_home_page_sidebar_stay_informed">
+                            <h2 id="stayInformed" class="fs-20 fw-600 mb-8">Stay informed</h2>
+                            <div class="fs-14 pb-16">Get notified when new posts are published.</div>
+                            <form method="post" action="https://devblogs.microsoft.com/visualstudio?na=s"
+                                onsubmit="return newsletter_check(this)">
+                                <input type="hidden" name="nlang" value="">
+                                <div class="d-flex flex-column gap-12 mb-12">
+                                    <label for="ne">Email <span>*</span></label>
+                                    <div class="d-flex align-items-center justify-content-start flex-md-grow-1 bg-white"
+                                        style="align-self: stretch; height: 32px; border-radius: 4px; overflow: hidden; border: 1px solid var(--clr-border); width: 90%;">
+                                        <input class="x-hidden-focus bg-white"
+                                            style="flex: 1 1 0; align-self: stretch; border: none; padding: 4px 10px; font-family: Segoe UI; color: var(--clr-body);"
+                                            type="email" name="ne" placeholder="Enter your email" required=""
+                                            aria-required="true" autocomplete="email">
+                                    </div>
+                                    <div class="tnp-field tnp-field-profile"><label for="np1">Country/Region
+                                            <span>*</span></label>
+                                        <select class="tnp-profile tnp-profile-1 mt-8" id="tnp-profile_1" name="np1"
+                                            aria-label="Select Country/Region" required="" aria-required="true">
+                                            <option value="" selected="" disabled="">Select...</option>
+                                            <option>United States</option>
+                                            <option>Afghanistan</option>
+                                            <option>Åland Islands</option>
+                                            <option>Albania</option>
+                                            <option>Algeria</option>
+                                            <option>American Samoa</option>
+                                            <option>Andorra</option>
+                                            <option>Angola</option>
+                                            <option>Anguilla</option>
+                                            <option>Antarctica</option>
+                                            <option>Antigua and Barbuda</option>
+                                            <option>Argentina</option>
+                                            <option>Armenia</option>
+                                            <option>Aruba</option>
+                                            <option>Australia</option>
+                                            <option>Austria</option>
+                                            <option>Azerbaijan</option>
+                                            <option>Bahamas</option>
+                                            <option>Bahrain</option>
+                                            <option>Bangladesh</option>
+                                            <option>Barbados</option>
+                                            <option>Belarus</option>
+                                            <option>Belgium</option>
+                                            <option>Belize</option>
+                                            <option>Benin</option>
+                                            <option>Bermuda</option>
+                                            <option>Bhutan</option>
+                                            <option>Bolivia</option>
+                                            <option>Bonaire</option>
+                                            <option>Bosnia and Herzegovina</option>
+                                            <option>Botswana</option>
+                                            <option>Bouvet Island</option>
+                                            <option>Brazil</option>
+                                            <option>British Indian Ocean Territory</option>
+                                            <option>British Virgin Islands</option>
+                                            <option>Brunei</option>
+                                            <option>Bulgaria</option>
+                                            <option>Burkina Faso</option>
+                                            <option>Burundi</option>
+                                            <option>Cabo Verde</option>
+                                            <option>Cambodia</option>
+                                            <option>Cameroon</option>
+                                            <option>Canada</option>
+                                            <option>Cayman Islands</option>
+                                            <option>Central African Republic</option>
+                                            <option>Chad</option>
+                                            <option>Chile</option>
+                                            <option>China</option>
+                                            <option>Christmas Island</option>
+                                            <option>Cocos (Keeling) Islands</option>
+                                            <option>Colombia</option>
+                                            <option>Comoros</option>
+                                            <option>Congo</option>
+                                            <option>Congo (DRC)</option>
+                                            <option>Cook Islands</option>
+                                            <option>Costa Rica</option>
+                                            <option>Côte dIvoire</option>
+                                            <option>Croatia</option>
+                                            <option>Curaçao</option>
+                                            <option>Cyprus</option>
+                                            <option>Czechia</option>
+                                            <option>Denmark</option>
+                                            <option>Djibouti</option>
+                                            <option>Dominica</option>
+                                            <option>Dominican Republic</option>
+                                            <option>Ecuador</option>
+                                            <option>Egypt</option>
+                                            <option>El Salvador</option>
+                                            <option>Equatorial Guinea</option>
+                                            <option>Eritrea</option>
+                                            <option>Estonia</option>
+                                            <option>Eswatini</option>
+                                            <option>Ethiopia</option>
+                                            <option>Falkland Islands</option>
+                                            <option>Faroe Islands</option>
+                                            <option>Fiji</option>
+                                            <option>Finland</option>
+                                            <option>France</option>
+                                            <option>French Guiana</option>
+                                            <option>French Polynesia</option>
+                                            <option>French Southern Territories</option>
+                                            <option>Gabon</option>
+                                            <option>Gambia</option>
+                                            <option>Georgia</option>
+                                            <option>Germany</option>
+                                            <option>Ghana</option>
+                                            <option>Gibraltar</option>
+                                            <option>Greece</option>
+                                            <option>Greenland</option>
+                                            <option>Grenada</option>
+                                            <option>Guadeloupe</option>
+                                            <option>Guam</option>
+                                            <option>Guatemala</option>
+                                            <option>Guernsey</option>
+                                            <option>Guinea</option>
+                                            <option>Guinea-Bissau</option>
+                                            <option>Guyana</option>
+                                            <option>Haiti</option>
+                                            <option>Heard Island and McDonald Islands</option>
+                                            <option>Honduras</option>
+                                            <option>Hong Kong SAR</option>
+                                            <option>Hungary</option>
+                                            <option>Iceland</option>
+                                            <option>India</option>
+                                            <option>Indonesia</option>
+                                            <option>Iraq</option>
+                                            <option>Ireland</option>
+                                            <option>Isle of Man</option>
+                                            <option>Israel</option>
+                                            <option>Italy</option>
+                                            <option>Jamaica</option>
+                                            <option>Jan Mayen</option>
+                                            <option>Japan</option>
+                                            <option>Jersey</option>
+                                            <option>Jordan</option>
+                                            <option>Kazakhstan</option>
+                                            <option>Kenya</option>
+                                            <option>Kiribati</option>
+                                            <option>Korea</option>
+                                            <option>Kosovo</option>
+                                            <option>Kuwait</option>
+                                            <option>Kyrgyzstan</option>
+                                            <option>Laos</option>
+                                            <option>Latvia</option>
+                                            <option>Lebanon</option>
+                                            <option>Lesotho</option>
+                                            <option>Liberia</option>
+                                            <option>Libya</option>
+                                            <option>Liechtenstein</option>
+                                            <option>Lithuania</option>
+                                            <option>Luxembourg</option>
+                                            <option>Macau SAR</option>
+                                            <option>Madagascar</option>
+                                            <option>Malawi</option>
+                                            <option>Malaysia</option>
+                                            <option>Maldives</option>
+                                            <option>Mali</option>
+                                            <option>Malta</option>
+                                            <option>Marshall Islands</option>
+                                            <option>Martinique</option>
+                                            <option>Mauritania</option>
+                                            <option>Mauritius</option>
+                                            <option>Mayotte</option>
+                                            <option>Mexico</option>
+                                            <option>Micronesia</option>
+                                            <option>Moldova</option>
+                                            <option>Monaco</option>
+                                            <option>Mongolia</option>
+                                            <option>Montenegro</option>
+                                            <option>Montserrat</option>
+                                            <option>Morocco</option>
+                                            <option>Mozambique</option>
+                                            <option>Myanmar</option>
+                                            <option>Namibia</option>
+                                            <option>Nauru</option>
+                                            <option>Nepal</option>
+                                            <option>Netherlands</option>
+                                            <option>New Caledonia</option>
+                                            <option>New Zealand</option>
+                                            <option>Nicaragua</option>
+                                            <option>Niger</option>
+                                            <option>Nigeria</option>
+                                            <option>Niue</option>
+                                            <option>Norfolk Island</option>
+                                            <option>North Macedonia</option>
+                                            <option>Northern Mariana Islands</option>
+                                            <option>Norway</option>
+                                            <option>Oman</option>
+                                            <option>Pakistan</option>
+                                            <option>Palau</option>
+                                            <option>Palestinian Authority</option>
+                                            <option>Panama</option>
+                                            <option>Papua New Guinea</option>
+                                            <option>Paraguay</option>
+                                            <option>Peru</option>
+                                            <option>Philippines</option>
+                                            <option>Pitcairn Islands</option>
+                                            <option>Poland</option>
+                                            <option>Portugal</option>
+                                            <option>Puerto Rico</option>
+                                            <option>Qatar</option>
+                                            <option>Réunion</option>
+                                            <option>Romania</option>
+                                            <option>Rwanda</option>
+                                            <option>Saba</option>
+                                            <option>Saint Barthélemy</option>
+                                            <option>Saint Kitts and Nevis</option>
+                                            <option>Saint Lucia</option>
+                                            <option>Saint Martin</option>
+                                            <option>Saint Pierre and Miquelon</option>
+                                            <option>Saint Vincent and the Grenadines</option>
+                                            <option>Samoa</option>
+                                            <option>San Marino</option>
+                                            <option>São Tomé and Príncipe</option>
+                                            <option>Saudi Arabia</option>
+                                            <option>Senegal</option>
+                                            <option>Serbia</option>
+                                            <option>Seychelles</option>
+                                            <option>Sierra Leone</option>
+                                            <option>Singapore</option>
+                                            <option>Sint Eustatius</option>
+                                            <option>Sint Maarten</option>
+                                            <option>Slovakia</option>
+                                            <option>Slovenia</option>
+                                            <option>Solomon Islands</option>
+                                            <option>Somalia</option>
+                                            <option>South Africa</option>
+                                            <option>South Georgia and South Sandwich Islands</option>
+                                            <option>South Sudan</option>
+                                            <option>Spain</option>
+                                            <option>Sri Lanka</option>
+                                            <option>St Helena</option>
+                                            <option>Ascension</option>
+                                            <option>Tristan da Cunha</option>
+                                            <option>Suriname</option>
+                                            <option>Svalbard</option>
+                                            <option>Sweden</option>
+                                            <option>Switzerland</option>
+                                            <option>Taiwan</option>
+                                            <option>Tajikistan</option>
+                                            <option>Tanzania</option>
+                                            <option>Thailand</option>
+                                            <option>Timor-Leste</option>
+                                            <option>Togo</option>
+                                            <option>Tokelau</option>
+                                            <option>Tonga</option>
+                                            <option>Trinidad and Tobago</option>
+                                            <option>Tunisia</option>
+                                            <option>Turkey</option>
+                                            <option>Turkmenistan</option>
+                                            <option>Turks and Caicos Islands</option>
+                                            <option>Tuvalu</option>
+                                            <option>U.S. Outlying Islands</option>
+                                            <option>U.S. Virgin Islands</option>
+                                            <option>Uganda</option>
+                                            <option>Ukraine</option>
+                                            <option>United Arab Emirates</option>
+                                            <option>United Kingdom</option>
+                                            <option>Uruguay</option>
+                                            <option>Uzbekistan</option>
+                                            <option>Vanuatu</option>
+                                            <option>Vatican City</option>
+                                            <option>Venezuela</option>
+                                            <option>Vietnam</option>
+                                            <option>Wallis and Futuna</option>
+                                            <option>Yemen</option>
+                                            <option>Zambia</option>
+                                            <option>Zimbabwe</option>
+                                        </select>
+                                    </div>
+                                    <div id="privacyField" class="tnp-field tnp-privacy-field">
+                                        <label>I would like to receive the Visual Studio Blog Newsletter. <a
+                                                style="color: var(--clr-body-link); text-decoration: underline;"
+                                                target="_blank"
+                                                href="https://go.microsoft.com/fwlink/?LinkId=521839">Privacy
+                                                Statement.</a></label>
+                                    </div>
+                                    <div id="consentContainer"></div>
+                                    <div class="d-flex">
+                                        <button class="tnp-submit btn-primary" type="submit"
+                                            value="Subscribe">Subscribe</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </aside>
+                <script>
+                    let devblogs_site_url = { "site_url": "https://devblogs.microsoft.com/visualstudio" };
+                    let lastUrl = window.location.pathname;
+                    document.addEventListener('DOMContentLoaded', function () {
+
+                        let currentPage = 1; // Initialize current page number
+
+                        // Reference the "Load More" button
+                        const loadMoreButton = document.getElementById('pload-more');
+                        const loaderOverlay = document.getElementById('loader-overlay');
+                        const masonryContainer = document.querySelector('.masonry-container');
+
+                        // Check the initial post count
+                        const initialPosts = masonryContainer.querySelectorAll('.masonry-card'); // Adjust selector if needed
+
+                        if (initialPosts.length < 8) {
+                            loadMoreButton.style.display = 'none'; // Hide "Load More" button if 8 or fewer posts
+                        }
+
+                        const site_url = devblogs_site_url.site_url;
+
+                        // Add a click event listener for the "Load More" button
+                        loadMoreButton.addEventListener('click', function (e) {
+                            e.preventDefault(); // prevent full page load
+                            currentPage++; // Increment page number
+                            const currentBlogId = loadMoreButton.getAttribute('data-siteid');
+                            loadMoreButton.style.display = 'none'; // Hide "Load More Posts" text
+
+                            // Prepare data to send in the POST request
+                            const data = new FormData();
+                            data.append('action', 'evo_pagination_load_more');
+                            data.append('site_id', currentBlogId);
+                            data.append('paged', currentPage);
+
+                            // Show the preloader
+                            loaderOverlay.style.display = 'block';
+
+                            // Perform the AJAX request using fetch API
+                            fetch(devblogs_ajax_evo.ajaxurl, {
+                                method: 'POST',
+                                body: data
+                            })
+                                .then(response => response.json())
+                                .then(res => {
+                                    // Append new items to the masonry container
+                                    const tempDiv = document.createElement('div');
+                                    tempDiv.innerHTML = res.html;
+                                    const newItems = tempDiv.children;
+
+                                    Array.from(newItems).forEach((item, index) => {
+                                        item.classList.add('hidden'); // Add the 'hidden' class initially
+
+                                        if (index === 0) {
+                                            item.setAttribute('data-page', currentPage); // You can change 'data-page' to any attribute you want
+                                            item.setAttribute('data-url', site_url + '/page/' + currentPage + '/'); // You can change 'data-url' to any attribute you want
+                                            item.classList.add('alm-seo'); // Additional class for first item
+                                        }
+
+                                        masonryContainer.appendChild(item);
+
+                                        // Use CSS transition after appending the item
+                                        setTimeout(() => {
+                                            item.classList.remove('hidden'); // Trigger the CSS transition
+                                        }, 100);
+                                    });
+
+                                    // Show the masonry container after the items are added
+                                    masonryContainer.style.opacity = 1;
+
+                                    // **Re-initialize Gifffer after new items are added**
+                                    setTimeout(() => {
+                                        if (typeof Gifffer === 'function') {
+                                            Gifffer(); // Reinitialize Gifffer for new images
+                                        }
+                                    }, 300); // Delay to ensure new elements are in the DOM
+
+                                    // Show the "Load More Posts" button again only if there are more pages
+                                    if (currentPage < res.max) {
+                                        loadMoreButton.style.display = 'block'; // Show "Load More Posts" text
+                                        loadMoreButton.setAttribute('href', site_url + '/page/' + (currentPage + 1) + '/'); // Update href for next page
+                                    }
+
+                                    // Hide the preloader after 500ms
+                                    setTimeout(() => {
+                                        loaderOverlay.style.display = 'none';
+                                    }, 500);
+                                    var page_num = '';
+                                    var page_url = site_url + '/page/' + currentPage + '/';
+
+                                    window.history.pushState("URL", "Title", page_url); // Add page
+                                })
+                                .catch(error => {
+                                    console.error('Error:', error);
+                                    // Show the "Load More Posts" button if an error occurs
+                                    loadMoreButton.style.display = 'block';
+                                    // Hide the preloader
+                                    loaderOverlay.style.display = 'none';
+                                });
+                        });
+                    });
+
+                    document.addEventListener("scroll", () => {
+                        const items = document.querySelectorAll("[data-url]"); // Select elements with data-url
+
+                        items.forEach(item => {
+                            const rect = item.getBoundingClientRect();
+                            if (rect.top >= 0 && rect.top <= window.innerHeight / 2) {
+                                const newUrl = item.getAttribute("data-url");
+                                if (newUrl && window.location.pathname !== newUrl) {
+                                    history.replaceState(null, "", newUrl); // Update the URL without reloading
+                                }
+                            }
+                        });
+                    });
+
+                    jQuery(document).ready(function () {
+                        const postsPerPage = 9;
+                        const container = jQuery(".masonry-container");
+                        const cards = container.children(".masonry-card");
+
+                        // First card = page 1
+                        const firstCard = cards.first();
+                        firstCard.attr('data-page', "1");
+                        firstCard.attr('data-url', "https://devblogs.microsoft.com/visualstudio");
+                        firstCard.addClass('alm-seo');
+
+                        // Assign data-page/data-url for page breaks
+                        cards.each(function (index) {
+                            const pageNum = Math.floor(index / postsPerPage) + 1;
+                            if (pageNum > 1 && ((index % postsPerPage) === 0)) {
+                                jQuery(this).attr('data-page', pageNum);
+                                jQuery(this).attr('data-url', "https://devblogs.microsoft.com/visualstudio/page/" + pageNum + "/");
+                            }
+                        });
+                    });
+
+
+                </script>
+            </div><!-- .container-sidebar-home -->
+        </div>
+    </div><!-- end .wrapper -->
+</main>
 </body>
 </html>

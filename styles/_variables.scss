@@ -1,0 +1,458 @@
+// evo shadows
+$box-shadow-light: 0px 4px 8px 0px rgba(0, 0, 0, 0.14), 0px 0px 2px 0px rgba(0, 0, 0, 0.12);
+$box-shadow-dark: 0px 4px 8px 0px rgba(0, 0, 0, 0.28), 0px 0px 2px 0px rgba(0, 0, 0, 0.24);
+$shadow-md: 0px 0px 2px 0px rgba(0, 0, 0, 0.12), 0px 8px 16px 0px rgba(0, 0, 0, 0.14);
+$toc-mobile-light: 0px 2px 4px 0px rgba(0, 0, 0, 0.14), 0px 0px 2px 0px rgba(0, 0, 0, 0.12);
+$toc-mobile-dark: 0px 2px 4px 0px rgba(0, 0, 0, 0.28), 0px 0px 2px 0px rgba(0, 0, 0, 0.24);
+$toc-mobile-open-light: 0px 14px 28px 0px rgba(0, 0, 0, 0.24), 0px 0px 8px 0px rgba(0, 0, 0, 0.20);
+$toc-mobile-open-dark: 0px 14px 28px 0px rgba(0, 0, 0, 0.48), 0px 0px 8px 0px rgba(0, 0, 0, 0.40);
+$share-btn-shadow-light: 0px 8px 16px 0px rgba(0, 0, 0, 0.14), 0px 0px 2px 0px rgba(0, 0, 0, 0.12);
+$share-btn-shadow-dark: 0px 8px 16px 0px rgba(0, 0, 0, 0.28), 0px 0px 2px 0px rgba(0, 0, 0, 0.24);
+
+// Body
+// Body font-size and color
+$fs-body: 14px;
+$lh-body: 24px;
+
+// Our custom sass brand colors - try to use these variables instead of creating more variables with the same colors
+$comm-20: #082338;
+$comm-21: #0A2E4A;
+$comm-22: #061724;
+$comm-60: #0F548C;
+$comm-70: #115EA3;
+$comm-80: #0F6CBD;
+$comm-100: #479EF5;
+$comm-110: #62ABF5;
+$comm-120: #96C6FA;
+$comm-150: #CFE4FA;
+$comm-160: #EBF3FC;
+$comm-170: #0C3B5E;
+$comm-180: #F5F5F5;
+$purple: #7160E8;
+$lavender: #D2CCF8;
+$lavender-30: #A79CF1;
+$lavender-50: #E7E4FB;
+$white: #FFFFFF;
+$black: #000000;
+$black-10: #3D3D3D;
+$grey-56: #E6E6E6;
+$grey-61: #616161;
+$grey-99: #999999;
+$grey-82: #D1D1D1;
+$grey-40: #666666;
+$grey-30: #1F1F1F;
+$grey-16: #292929;
+$grey-8: #141414;
+$grey-84: #D6D6D6;
+$grey-68: #ADADAD;
+$grey-24: #3D3D3D;
+$grey-42: #6B6B6B;
+$grey-46: #757575;
+$grey-70: #B3B3B3;
+$grey-78: #C7C7C7;
+$grey-88: #E0E0E0;
+
+$trans: transparent;
+
+$clr-body-bg: #F9F8FE;
+$clr-body: #242424;
+$clr-body-light: #424242;
+$clr-body-author-bg: #FAFAFA;
+$clr-highlight-card-bg: #e7e4fb;
+$clr-highlight-card-bg-dark: linear-gradient(180deg, #5649B0 51.04%, #221D46 100%);
+$clr-card-image-bg-light: #F5F5F5;
+$clr-card-image-bg-dark: #242424;
+$clr-all-blogs-slider-bg: linear-gradient(114deg, #F7E8F7 -14.05%, #ECECFF 120.69%);
+$clr-feature-bg: linear-gradient(180deg, #F7F9FE 51.04%, #E1E6FC 100%);
+$clr-feature-bg-dark: linear-gradient(180deg, rgba(24, 32, 71, 0.80) 0%, #3F3682 211.07%);
+$clr-email-banner-bg: linear-gradient(270deg, #E7E4FB 0%, #E1E6FC 100%), linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+$clr-email-banner-bg-dark: linear-gradient(271deg, #3F3682 21.38%, #2C3C85 77.42%);
+//code blocks
+$clr-pre-bg: #F0F0F0;
+$clr-pre-bg-dark: #2E2E2E;
+$bg-inline-code-light: #E6E6E6;
+$bg-inline-code-dark: #404040;
+$clr-table-alt: #F5F5F5;
+$clr-table-alt-dark: #292929;
+$clr-overlay: hsl(0deg 0% 100% / 50%);
+$clr-overlay-dark: hsl(0deg 0% 0% / 50%);
+$clr-shadow-light: 0px 14px 28px 0px rgba(0, 0, 0, 0.24), 0px 0px 8px 0px rgba(0, 0, 0, 0.20);
+$clr-shadow-dark: 0px 14px 28px 0px rgba(0, 0, 0, 0.48), 0px 0px 8px 0px rgba(0, 0, 0, 0.40);
+$tooltip-shadow-light: 0px 8px 16px 0px rgba(0, 0, 0, 0.14), 0px 0px 2px 0px rgba(0, 0, 0, 0.12);
+$tooltip-shadow-dark: 0px 8px 16px 0px rgba(0, 0, 0, 0.28), 0px 0px 2px 0px rgba(0, 0, 0, 0.24);
+$tag-disabled-bg-light: rgba(0, 0, 0, 0.05);
+$tag-disabled-bg-dark: rgba(0, 0, 0, 0.2);
+$tag-disabled-text-dark: rgba(214, 214, 214, 1);
+$clr-resources-bg: linear-gradient(180deg, rgba(249, 248, 254, 0.00) 15.5%, rgba(249, 248, 254, 0.08) 36.62%, #ECECFF 100%);
+$clr-resources-bg-dark: linear-gradient(180deg, rgba(44, 60, 133, 0.00) 15.5%, rgba(44, 60, 133, 0.08) 55.09%, #221D46 173.87%);
+$img-hero-bg: url(/wp-content/themes/devblogs-evo/images/landing-page/hero-landing.png);
+$img-hero-bg-dark: url(/wp-content/themes/devblogs-evo/images/landing-page/hero-landing-dark.png);
+$img-resources-bg: url(/wp-content/themes/devblogs-evo/images/landing-page/resources-landing.png);
+$img-resources-bg-dark: url(/wp-content/themes/devblogs-evo/images/landing-page/resources-landing-dark.png);
+$img-chevron-right-blue: url(/wp-content/themes/devblogs-evo/images/chevron-right-blue.svg);
+$img-chevron-right-white: url(/wp-content/themes/devblogs-evo/images/chevron-right-white.svg);
+$img-404-light: url(/wp-content/themes/devblogs-evo/images/404-graphic-light.svg);
+$img-404-dark: url(/wp-content/themes/devblogs-evo/images/404-graphic-dark.svg);
+// Line heights
+$lh-body: 22px;
+// Links
+$article-link-color: #0F6CBD;
+$coauthor-border-light: #FAFAFA;
+$coauthor-border-dark: #1F1F1F;
+$resources-border-dark: #{$grey-40};
+$clr-feature-dark: #2C3C85;
+$rss-light:#DA3B01;
+$rss-dark:#F87528;
+
+// Base and light theme
+:root {
+  --clr-uhf-bg: #{$white};
+  --clr-body-bg: #{$clr-body-bg};
+  --clr-body: #{$clr-body};
+  --clr-body-light: #{$clr-body-light};
+  --clr-body-link: #{$comm-70};
+  --clr-body-link-2: #{$comm-70};
+  --clr-body-author-bg: #{$clr-body-author-bg};
+  --clr-anchor-hover: #{$comm-60};
+  --clr-btn-primary-bg: #{$comm-80};
+  --clr-btn-primary-hover: #{$comm-70};
+  --clr-btn-secondary: #{$comm-80};
+  --clr-btn-secondary-bg: #{$white};
+  --clr-btn-secondary-hover: #{$comm-60};
+  --clr-btn-secondary-hover-bg: #{$comm-150};
+  --clr-btn-secondary-active: #{$comm-21};
+  --clr-btn-secondary-active-bg: #{$comm-120};
+  --clr-btn-toggle: #{$comm-80};
+  --clr-btn-greyscale: #{$clr-body};
+  --clr-btn-greyscale-bg: #{$white};
+  --clr-btn-greyscale-border: #{$grey-82};
+  --clr-btn-greyscale-hover-bg: #{$comm-180};
+  --clr-btn-greyscale-hover-border: #{$grey-78};
+  --clr-btn-greyscale-active-bg: #{$grey-88};
+  --clr-btn-greyscale-active-border: #{$grey-70};
+  --clr-codeblock-btn: #{$grey-61};
+  --clr-codeblock-btn-bg: #{$grey-56};
+  --clr-landing-navbar: #{$comm-80};
+  --img-chevron-right-link: #{$img-chevron-right-blue};
+  --img-hero-bg: #{$img-hero-bg};
+  --clr-hero-bg: #{$lavender-50};
+  --img-resources-bg: #{$img-resources-bg};
+  --clr-resources-bg: #{$clr-resources-bg};
+  --clr-highlight-card-bg: #{$clr-highlight-card-bg};
+  --clr-all-blogs-slider-bg: #{$clr-all-blogs-slider-bg};
+  --clr-feature-bg: #{$clr-feature-bg};
+  --clr-alert-banner-bg: #{$clr-email-banner-bg};
+  --clr-alert-banner-border: #{$lavender-30};
+  --clr-alert-banner-link: #{$comm-70};
+  --clr-pre-bg: #{$clr-pre-bg};
+  --theme-inline-code: #{$bg-inline-code-light};
+  --clr-svg-fill: #{$clr-body};
+  --clr-svg-fill-purple: #{$purple};
+  --clr-card-bg: #{$white};
+  --clr-card-image-bg: #{$clr-card-image-bg-light};
+  --clr-border: #{$grey-82};
+  --clr-border-light: #{$clr-pre-bg};
+  --clr-table-bg: #{$white};
+  --clr-table-bg-alt: #{$clr-table-alt};
+  --clr-overlay: #{$clr-overlay};
+  --clr-box-shadow: #{$box-shadow-light};
+  --clr-box-hover-shadow: #{$clr-shadow-light};
+  --tooltip-shadow: #{$tooltip-shadow-light};
+  --tag-disabled-bg: #{$tag-disabled-bg-light};
+  --tag-disabled-clr: #{$clr-body};
+  --clr-coauthor-outline: #{$coauthor-border-light};
+  --clr-resources-border: #{$grey-82};
+  --clr-rss-social: #{$article-link-color};
+  --img-404: #{$img-404-light};
+  --clr-feature: #{$grey-82};
+  --toc-shadow-mbl: #{$toc-mobile-light};
+  --toc-shadow-mbl-open: #{$toc-mobile-open-light};
+  --clr-border-trans: #{$trans};
+  --clr-feature-trans: #{$trans};
+  --clr-rss: #{$rss-light};
+  --clr-social-btn-rest: #{$comm-80};
+  --clr-social-btn-bg-hover: #{$comm-180};
+  --clr-social-btn-count: #{$grey-61};
+  --clr-share-btn-shadow: #{$share-btn-shadow-light};
+}
+
+// Dark theme
+html[theme='dark'] {
+  --clr-uhf-bg: #{$black};
+  --clr-body-bg: #{$grey-30};
+  --clr-body: #{$clr-body-bg};
+  --clr-body-light: #{$grey-84};
+  --clr-body-link: #{$comm-100};
+  --clr-body-link-2: #{$white};
+  --clr-body-author-bg: #{$clr-body};
+  --clr-anchor-hover: #{$comm-110};
+  --clr-btn-primary-bg: #{$comm-80};
+  --clr-btn-primary-hover: #{$comm-70};
+  --clr-btn-secondary: #{$comm-110};
+  --clr-btn-secondary-bg: #{$grey-16};
+  --clr-btn-secondary-hover: #{$comm-120};
+  --clr-btn-secondary-hover-bg: #{$comm-170};
+  --clr-btn-secondary-active: #{$comm-100};
+  --clr-btn-secondary-active-bg: #{$comm-22};
+  --clr-btn-toggle: #{$comm-70};
+  --clr-btn-greyscale: #{$white};
+  --clr-btn-greyscale-bg: #{$grey-16};
+  --clr-btn-greyscale-border: #{$grey-40};
+  --clr-btn-greyscale-hover-bg: #{$black-10};
+  --clr-btn-greyscale-hover-border: #{$grey-46};
+  --clr-btn-greyscale-active-bg: #{$grey-30};
+  --clr-btn-greyscale-active-border: #{$grey-42};
+  --clr-codeblock-btn: #{$grey-84};
+  --clr-codeblock-btn-bg: #{$black-10};
+  --clr-landing-navbar: #{$comm-100};
+  --img-chevron-right-link: #{$img-chevron-right-white};
+  --img-hero-bg: #{$img-hero-bg-dark};
+  --clr-hero-bg: #{$grey-8};
+  --img-resources-bg: #{$img-resources-bg-dark};
+  --clr-resources-bg: #{$clr-resources-bg-dark};
+  --clr-highlight-card-bg: #{$clr-highlight-card-bg-dark};
+  --clr-all-blogs-slider-bg: #{$clr-highlight-card-bg-dark};
+  --clr-feature-bg: #{$clr-feature-bg-dark};
+  --clr-alert-banner-bg: #{$clr-email-banner-bg-dark};
+  --clr-alert-banner-border: #{$purple};
+  --clr-alert-banner-link: #{$white};
+  --clr-pre-bg: #{$clr-pre-bg-dark};
+  --theme-inline-code: #{$bg-inline-code-dark};
+  --clr-svg-fill: #{$clr-body-bg};
+  --clr-svg-fill-purple: #{$lavender};
+  --clr-card-bg: #{$grey-16};
+  --clr-card-image-bg: #{$clr-card-image-bg-dark};
+  --clr-border: #{$grey-24};
+  --clr-border-light: #{$black-10};
+  --clr-table-bg: #{$clr-table-alt-dark};
+  --clr-table-bg-alt: #{$grey-8};
+  --clr-overlay: #{$clr-overlay-dark};
+  --clr-box-shadow: #{$box-shadow-dark};
+  --clr-box-hover-shadow: #{$clr-shadow-dark};
+  --tooltip-shadow: #{$tooltip-shadow-dark};
+  --tag-disabled-bg: #{$tag-disabled-bg-dark};
+  --tag-disabled-clr: #{$tag-disabled-text-dark};
+  --clr-coauthor-outline: #{$coauthor-border-dark};
+  --clr-resources-border: #{$resources-border-dark};
+  --clr-rss-social: #{$comm-100};
+  --img-404: #{$img-404-dark};
+  --clr-feature: #{$clr-feature-dark};
+  --toc-shadow-mbl: #{$toc-mobile-dark};
+  --toc-shadow-mbl-open: #{$toc-mobile-open-dark};
+  --clr-border-trans: #{$grey-24};
+  --clr-feature-trans: #{$clr-feature-dark};
+  --clr-rss: #{$rss-dark};
+  --clr-social-btn-rest: #{$comm-100};
+  --clr-social-btn-bg-hover: #{$grey-24};
+  --clr-social-btn-count: #{$grey-68};
+  --clr-share-btn-shadow: #{$share-btn-shadow-dark};
+}
+
+// High contrast using the forced-colors and system color keywords
+@media (forced-colors: active) {
+  :root,
+  html[theme='dark'] {
+    --clr-body-link: LinkText;
+    --clr-svg-fill: CanvasText;
+    --clr-svg-fill-purple: LinkText;
+    --clr-alert-banner-bg: Canvas;
+    --clr-rss-social: LinkText;
+    --clr-alert-banner-link: LinkText;
+    --clr-btn-primary-bg: ButtonFace;
+    --clr-btn-primary-hover: ButtonFace;
+    --clr-btn-secondary: LinkText;
+    --clr-anchor-hover: Highlight;
+    --clr-btn-secondary-hover: Highlight;
+    --clr-body-light: CanvasText;
+  }
+}
+
+// High contrast using the forced-colors and system color keywords
+
+//Aquatic dark theme (light mode)
+@media (-ms-high-contrast: white-on-black), (forced-colors: active) and (prefers-color-scheme: dark) {
+  :root  {
+    --clr-body: #{$white};
+    --tag-disabled-clr: #{$white};
+    --clr-social-btn-count : LinkText;
+    --clr-landing-navbar: LinkText;
+  }
+  :root span.theme-text svg path {
+    fill: #{$white};
+  }
+  :root .login-section.c-me .evo-dropdown-menu button span,
+  :root .c-me.theme-picker button .theme-text,
+  :root .c-uhfh>[class*="theme-"] .c-logo {
+    color: #{$white};
+  }
+}
+
+//Desert light theme (dark mode)
+@media (-ms-high-contrast: black-on-white), (forced-colors: active) and (prefers-color-scheme: light) {
+  html[theme='dark'] {
+    --clr-body: #{$clr-body};
+    --tag-disabled-clr: #{$clr-body};
+    --clr-social-btn-count : LinkText;
+    --clr-landing-navbar: LinkText;
+  }
+  html[theme='dark'] span.theme-text svg path {
+    fill: #{$clr-body};
+  }
+  html[theme='dark'] .login-section.c-me .evo-dropdown-menu button span,
+  html[theme='dark'] .c-me.theme-picker button .theme-text,
+  html[theme='dark'] .c-uhfh .c-logo {
+    color: #{$clr-body};
+  }
+}
+
+// Headings desktop
+$fs-h1: 40px;
+$fs-h2: 32px;
+$fs-h3: 28px;
+$fs-h4: 24px;
+$fs-h5: 20px;
+$fs-h6: 16px;
+
+// Line heights for headings
+$lh-h1: 52px;
+$lh-h2: 40px;
+$lh-h3: 36px;
+$lh-h4: 32px;
+$lh-h5: 28px;
+$lh-h6: 22px;
+
+// Display desktop
+$fs-14: 14px;
+$fs-12: 12px;
+
+$lh-14: 20px;
+$lh-12: 16px;
+
+// landing page hero h1
+$fs-68: 68px;
+$fs-68-md: 40px;
+$fw-600: 600;
+$fw-600-md: 400;
+$lh-68-md: 48px;
+
+// Headings tablet
+// Font size medium
+$fs-h1-md: 28px;
+$fs-h2-md: 24px;
+$fs-h3-md: 20px;
+$fs-h4-md: 20px;
+$fs-h5-md: 16px;
+$fs-h6-md: 16px;
+
+// Line heights
+$lh-h1-md: 36px;
+$lh-h2-md: 32px;
+$lh-h3-md: 28px;
+$lh-h4-md: 28px;
+$lh-h5-md: 22px;
+$lh-h6-md: 22px;
+
+// Apply custom padding for article headings
+$h2-article-padding: 64px 0 24px;
+$h3-article-padding: 40px 0 24px;
+
+// Heads desktop
+:root {
+  --fs-h1: #{$fs-h1};
+  --fs-h2: #{$fs-h2};
+  --fs-h3: #{$fs-h3};
+  --fs-h4: #{$fs-h4};
+  --fs-h5: #{$fs-h5};
+  --fs-h6: #{$fs-h6};
+  --lh-h1: #{$lh-h1};
+  --lh-h2: #{$lh-h2};
+  --lh-h3: #{$lh-h3};
+  --lh-h4: #{$lh-h4};
+  --lh-h5: #{$lh-h5};
+  --lh-h6: #{$lh-h6};
+  --fs-68: #{$fs-68};
+  --fw-600: #{$fw-600};
+}
+
+// Headings tablet
+@media (max-width: 1084px) {
+  :root {
+    --fs-h1: #{$fs-h1-md};
+    --fs-h2: #{$fs-h2-md};
+    --fs-h3: #{$fs-h3-md};
+    --fs-h4: #{$fs-h4-md};
+    --fs-h5: #{$fs-h5-md};
+    --fs-h6: #{$fs-h6-md};
+    --lh-h1: #{$lh-h1-md};
+    --lh-h2: #{$lh-h2-md};
+    --lh-h3: #{$lh-h3-md};
+    --lh-h4: #{$lh-h4-md};
+    --lh-h5: #{$lh-h5-md};
+    --lh-h6: #{$lh-h6-md};
+    --fs-68: #{$fs-68-md};
+    --fw-600: #{$fw-600-md};
+  }
+}
+
+// evo container 1600px
+$container-width: 1600px;
+// Grid columns - currently not being used
+// $grid-fractions: (
+//   "25": 25%,
+//   "30": 30%,
+//   "35": 35%,
+//   "50": 50%,
+//   "60": 60%,
+//   "75": 75%,
+// );
+
+// grid-breakpoints
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 1084px,
+  lg: 1212px,
+  xl: 1424px,
+  xxl: 1648px
+);
+
+// Spacers - gap, margin and padding - leave not when adding - using rem
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  4: $spacer * 0.25,
+  // 4px between author name and author role
+  6: $spacer * 0.375,
+  // 6px likes circle count
+  8: $spacer * 0.5,
+  // 8px use between h1 and p
+  10: $spacer * 0.625,
+  // 6px likes circle count
+  12: $spacer * 0.75,
+  // 12px use between author role and socials
+  16: $spacer * 1,
+  // 16px use between h2 with border
+  18: $spacer * 1,
+  // 18px use for email banner py-18
+  20: $spacer * 1.25,
+  // 20px for pinned post under h2 bottom border and card padding
+  24: $spacer * 1.5,
+  // 24px for under h2 bottom border and card padding
+  32: $spacer * 2,
+  // 32px between pinned post and latest heading
+  40: $spacer * 2.5,
+  // 40px homepage sidebar bump left
+  56: $spacer * 3.5,
+  // 56px landing page topics gap
+  60: $spacer * 3.75,
+  // 60px landing page topics bottom
+  64: $spacer * 4,
+  // 64px between topics and author on post
+  80: $spacer * 5,
+  // 80px between h1 and h2
+  100: $spacer * 6.25,
+  // 100px landing section spacing
+  111: $spacer * 7.375,
+  // 111px for post left offset
+  198: $spacer * 11.625 // 198px for post content right padding
+);
