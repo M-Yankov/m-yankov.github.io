@@ -9,8 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <style>
         body {
-            /* fix for mobile - anchor link bottom-right */
-            min-width: 600px;
+            font-size: min(1.75vw, 16px);
         }
 
         .material-symbols-outlined {
@@ -46,6 +45,10 @@
             * - обясненията са според моите разбирания за движенията и последователността, по принцип се броят дялове и тактове,
             но съм още далеч от тези неща да ги разбирам. Записките са с цел да се подсетя кое хоро как се играе, тъй като всяко едно има специфично движения.
         </p>
+
+        <div class="mt-3 mb-5">
+            <small class="text-muted float-end">Last updated: <span id="last-updated"></span></small>
+        </div>
 
         <table class="table table-hover border-primary table-responsive-sm">
             <thead class="sticky-top">
@@ -732,7 +735,7 @@
                     <td>
                         две граовки, две ръченици, две граовки, две ръченици, 
                         с десен чукче отпред, чукче назад, чукче отпред, ножица, да завърши с ляв назад
-                        с ляв чукче от пред, чукче назад, чукче отпред, нижица да завърши с десен назад (симетрично),
+                        с ляв чукче от пред, чукче назад, чукче отпред, нoжица да завърши с десен назад (симетрично),
                         стъпка с ляв назад, дав пъти ляво коляно горе с леко завъртане към центъра,
                     </td>
                     <td>
@@ -1341,6 +1344,32 @@
                         </ul>
                     </td>
                 </tr>
+                <tr>
+                    <td></td>
+                    <td>Костенско</td>
+                    <td>
+                        <p>
+                            Три стъпки на дясно с ляв отпред,
+                            3x чукчета, ляв горе, десен горе, ляв горе 
+                            ножица ляв десен се приплъзват, и се набива с десен,
+                            2х чукчета, десен горе, ляв горе, едно бавно набиване на десен, после две по бързи набивания.
+                            Движения с десния крак чрез прехвърляне на тежестта като левия се вдига но седи на място:
+                            Десния стъпва, отдясно, отпред, отдясно, отпред,
+                            2х чукчета, ляв горе, десен горе, кръстоска с десен отпред, чукче десен горе.
+
+                        </p>
+                        <p>
+                            Ръцете са горе, като се движим на дясно правят леки кръгови движения.
+                            През останалото време със чукчета и другите движения се вдигнат леко нагоре.
+                            Ръцете се свалят за кратко при кръстоската.
+                        </p>
+                    </td>
+                    <td>
+                        <ul>
+                            <li><a href="https://www.youtube.com/watch?v=wsbCK4FE-Yo" target="_blank">Видео</a></li>
+                        </ul>
+                    </td>
+                </tr>
             </tbody>
         </table>
 
@@ -1605,10 +1634,6 @@
       Сайт със събрани видеа от голяма част от хората - <a href="https://www.folklorika.com/народни-танци/">Линк</a>   
     </div>
 
-    <div class="container mt-3 mb-5">
-        <small class="text-muted float-end">Last updated: <span id="last-updated"></span></small>
-    </div>
-
     <div class="sticky-bottom float-end float-anchor">
         <button type="button" class="btn btn-primary" id="to-top">
             <span class="material-symbols-outlined">arrow_circle_up</span>
@@ -1624,7 +1649,7 @@
         });
     </script>
     <script>
-
+        // Scroll Subscriptions
         document.getElementById('clear-button').addEventListener('click', function(e) {
             document.getElementById('autocomplete').value = '';
         });
